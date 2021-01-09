@@ -1,3 +1,136 @@
 main{
-    color: red;
+    background: #f1f1f1;
+    padding-bottom: 30px;
+
+    .secsall{
+        overflow: hidden;
+
+        .titlebox{
+            height: 58px;
+            position: relative;
+            h2{
+                font-size: 25px;
+                line-height: 58px;
+            }
+            span{
+                position: absolute;
+                right: 0px;
+                bottom: 10px;
+                user-select: none;
+                cursor: pointer;
+                i{
+                    border: 1px solid #cccccc;
+                    color: #aaaaaa;
+                    font-size: 20px;
+                    padding: 0px 10px;
+                    &:nth-child(1){
+                        border-right: 0px;
+                    }
+                }
+            }
+            
+        }
+
+        .timer{
+            width: 234px;
+            height: 300px;
+            border-top: 1px solid red;
+            background: #dddddd;
+            text-align: center;
+            float: left;
+            p:nth-child(1){
+                color: red;
+                font-size: 20px;
+                line-height: 70px;
+                padding-top: 30px;
+            }
+            p:nth-child(3){
+                color: #666666;
+                line-height: 70px;
+            }
+            span{
+                display: inline-block;
+                width: 46px;
+                height: 46px;
+                background: #444444;
+                color: #ffffff;
+                text-align: center;
+                line-height: 46px;
+                font-size: 25px;
+            }
+            
+        }
+
+        .sallboxs{
+            float: left;
+            overflow: hidden;
+            width: 992px;
+            height: 300px;
+            
+            ul{
+                overflow: hidden;
+                width: 3000px;
+                li{
+                    float: left;
+                    width: 234px;
+                    height: 300px;
+                    margin-left: 14px;
+                    text-align: center;
+                    box-shadow: 3px 3px 3px #cccccc;
+                    background: #ffffff;
+                    .sallbox{
+                        width: 160px;
+                        height: 165px;
+                        margin: 10px auto;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    p:nth-child(2){
+                        color: #111111;
+                        text-align: center;
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                    p:nth-child(3){
+                        color: #888888;
+                        font-size: 13px;
+                        text-align: center;
+                        line-height: 22px;
+                    }
+                    span{
+                        font-size: 16px;
+                        color: #ff6700;
+                        line-height: 50px;
+                    }
+                    del{
+                        color: #aaaaaa;
+                    }
+                }
+                li:nth-child(1){
+                    border-top: 1px solid yellow;
+                }
+                li:nth-child(2){
+                    border-top: 1px solid green;
+                }
+                li:nth-child(3){
+                    border-top: 1px solid blue;
+                }
+                li:nth-child(4){
+                    border-top: 1px solid orangered;
+                }
+                li:nth-child(5){
+                    border-top: 1px solid pink;
+                }
+
+                
+                
+                
+            }
+
+
+        }
+    }
 }
