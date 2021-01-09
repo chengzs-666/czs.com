@@ -1,3 +1,99 @@
-banner{
-    color: red;
+.banner-wrapper{
+    position: relative;
+    .swiper-container{
+        width: 1226px;
+        height: 460px;
+        .swiper-button-prev{
+            left: 234px;
+            padding: 10px;
+            &:hover{
+                background: #444444;
+            }
+        }
+        .swiper-button-next{
+            right: 0px;
+            padding: 10px;
+            &:hover{
+                background: #444444;
+            }
+        }
+        .swiper-pagination{
+            text-align: right;
+            bottom: 30px;
+            .swiper-pagination-bullet{
+                &:nth-child(4){
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+    .banner-list{
+        width: 234px;
+        height: 440px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 99;
+        padding-top:20px;
+        background: #888888;
+        li{
+            float: none;
+            a{
+                display: inline-block;
+                width: 200px;
+                height: 40px;
+                line-height: 40px;
+                text-indent: 2em;
+            }
+            em{
+                color: #cccccc;
+            }
+            &:hover{
+                background: orangered;
+            }
+        }
+    }
+    .banner-bot{
+        overflow: hidden;
+        padding-top: 14px;
+        ul:nth-child(1){
+            float: left;
+            width: 234px;
+            background: #444444;
+            li{
+                width: 70px;
+                height: 82px;
+                padding: 0px 3px;
+                margin-bottom: 3px;
+                text-align: center;
+                color: #cccccc;
+                
+                a{
+                    opacity: 0.7;
+                    &:hover{
+                        opacity: 1;
+                        color: white;
+                    }
+                    em{
+                        font-size: 20px;
+                        display: block;
+                        margin-top: 5px;
+                        padding-top: 20px;
+                        border-top: 1px solid #cccccc;
+                    }
+                }
+                
+            }
+        }
+        ul:nth-child(2){
+            float: left;
+            li{
+                margin-left: 14px;
+                img{
+                    width: 316px;
+                    height: 170px;
+                }
+            }
+        }
+    }
 }
