@@ -1,0 +1,191 @@
+.head-head {
+    height: 120px;
+    display: block;
+    background: url(../img/head-head.jpg) no-repeat;
+    background-size: auto 120px;
+    background-position: 50%
+}
+header{
+    .topbar{
+        background: #444444;
+        &::after{
+            content: '';
+            display: block;
+            height: 0px;
+            overflow: hidden;
+            visibility: hidden;
+            clear: both;
+        }
+        ul:nth-child(1){
+            float: left;
+            .downli{
+                position: relative;
+                &:hover{
+                    .downbox{
+                        display: block;
+                        height: 148px;
+                    }
+                }
+                .downbox{
+                    position: absolute;
+                    top: 40px;
+                    left: -30px;
+                    width: 124px;
+                    height: 0px;
+                    overflow: hidden;
+                    transition: all 0.2s;
+                    img{
+                        width: 90px;
+                        height: 90px;
+                        padding: 18px 17px 0px;
+                    }
+                    p{
+                        text-align: center;
+                        color: #444444;
+                        line-height: 12px;
+                    }
+                }
+            }
+            li{
+                a{
+                    font-size: 14px;
+                    height: 40px;
+                    display: block;
+                    padding: 0px 6px;
+                    line-height: 40px;
+                    color: #888888;
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
+        }
+        ul:nth-child(2){
+            float: right;
+            li{
+                a{
+                    font-size: 14px;
+                    height: 40px;
+                    display: block;
+                    padding: 0px 6px;
+                    line-height: 40px;
+                    color: #888888;
+                    &:hover{
+                        color: white;
+                    }                    
+                }
+                .buylink{
+                    display: block;
+                    width: 120px;
+                    text-align: center;
+                    background: #888888;
+                    color: #cccccc;
+                    position: relative;
+                    span{
+                        font-size: 16px;
+                    }
+                    &:hover{
+                        background: white;
+                        color: orangered;
+                        .buycar{
+                            display: block;
+                        }
+                    }
+                    .buycar{
+                        display: none;
+                        position: absolute;
+                        width: 200px;
+                        height: 100px;
+                        right: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    .midbar{
+        overflow: hidden;
+        padding: 20px 0px;
+        .logo{
+            float: left;
+            width: 110px;
+            height: 55px;
+            background: orangered;
+            overflow: hidden;
+            position: relative;
+            img{
+                float: left;
+                width: 55px;
+                height: 55px;
+                transform: translate(-55px);
+                transition: all 0.2s;
+            }
+            &:hover{
+                img{
+                    transform: translate(0px); 
+                }
+            }
+        }
+        ul{
+            float: left;
+            margin-left: 120px;
+            li{
+                a{
+                    color: #222222;
+                    line-height: 50px;
+                    padding: 0px 7px;
+                    &:hover{
+                        color: orangered;
+                    }
+                }
+            }
+        }
+        .searchbox{
+            float: right;
+            border: 1px solid #cccccc;
+            font-size: 0;
+            input[type="search"]{
+                outline: none;
+                border: 0px;
+                height: 48px;
+                width: 243px;
+                text-indent: 1.5em;
+                border-right: 1px solid #cccccc;
+            }
+            input[type="submit"]{
+                outline: none;
+                border: 0px;
+                height: 48px;
+                width: 48px;
+                &:hover{
+                    background: orangered;
+                    color: white;
+                }
+            }
+        }
+    }
+    .botbar{
+        // position: absolute;
+        width: 100%;
+        border-top: 2px solid #cccccc;
+        border-bottom: 2px solid #cccccc;
+        ul{
+            width: 1226px;
+            margin: 0 auto;
+            li{
+                width: 204px;
+                height: 204px;
+                text-align: center;
+                img{
+                    width: 160px;
+                    height: 110px;
+                    padding: 10px 20px;
+                }
+                span{
+                    line-height: 25px;
+                    color: orangered;
+                }
+            }
+        }
+    }
+}

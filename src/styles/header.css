@@ -1,0 +1,177 @@
+.head-head {
+  height: 120px;
+  display: block;
+  background: url(../img/head-head.jpg) no-repeat;
+  background-size: auto 120px;
+  background-position: 50%;
+}
+header .topbar {
+  background: #444444;
+}
+header .topbar::after {
+  content: '';
+  display: block;
+  height: 0px;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+header .topbar ul:nth-child(1) {
+  float: left;
+}
+header .topbar ul:nth-child(1) .downli {
+  position: relative;
+}
+header .topbar ul:nth-child(1) .downli:hover .downbox {
+  display: block;
+  height: 148px;
+}
+header .topbar ul:nth-child(1) .downli .downbox {
+  position: absolute;
+  top: 40px;
+  left: -30px;
+  width: 124px;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+header .topbar ul:nth-child(1) .downli .downbox img {
+  width: 90px;
+  height: 90px;
+  padding: 18px 17px 0px;
+}
+header .topbar ul:nth-child(1) .downli .downbox p {
+  text-align: center;
+  color: #444444;
+  line-height: 12px;
+}
+header .topbar ul:nth-child(1) li a {
+  font-size: 14px;
+  height: 40px;
+  display: block;
+  padding: 0px 6px;
+  line-height: 40px;
+  color: #888888;
+}
+header .topbar ul:nth-child(1) li a:hover {
+  color: white;
+}
+header .topbar ul:nth-child(2) {
+  float: right;
+}
+header .topbar ul:nth-child(2) li a {
+  font-size: 14px;
+  height: 40px;
+  display: block;
+  padding: 0px 6px;
+  line-height: 40px;
+  color: #888888;
+}
+header .topbar ul:nth-child(2) li a:hover {
+  color: white;
+}
+header .topbar ul:nth-child(2) li .buylink {
+  display: block;
+  width: 120px;
+  text-align: center;
+  background: #888888;
+  color: #cccccc;
+  position: relative;
+}
+header .topbar ul:nth-child(2) li .buylink span {
+  font-size: 16px;
+}
+header .topbar ul:nth-child(2) li .buylink:hover {
+  background: white;
+  color: orangered;
+}
+header .topbar ul:nth-child(2) li .buylink:hover .buycar {
+  display: block;
+}
+header .topbar ul:nth-child(2) li .buylink .buycar {
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  right: 0px;
+}
+header .midbar {
+  overflow: hidden;
+  padding: 20px 0px;
+}
+header .midbar .logo {
+  float: left;
+  width: 110px;
+  height: 55px;
+  background: orangered;
+  overflow: hidden;
+  position: relative;
+}
+header .midbar .logo img {
+  float: left;
+  width: 55px;
+  height: 55px;
+  transform: translate(-55px);
+  transition: all 0.2s;
+}
+header .midbar .logo:hover img {
+  transform: translate(0px);
+}
+header .midbar ul {
+  float: left;
+  margin-left: 120px;
+}
+header .midbar ul li a {
+  color: #222222;
+  line-height: 50px;
+  padding: 0px 7px;
+}
+header .midbar ul li a:hover {
+  color: orangered;
+}
+header .midbar .searchbox {
+  float: right;
+  border: 1px solid #cccccc;
+  font-size: 0;
+}
+header .midbar .searchbox input[type="search"] {
+  outline: none;
+  border: 0px;
+  height: 48px;
+  width: 243px;
+  text-indent: 1.5em;
+  border-right: 1px solid #cccccc;
+}
+header .midbar .searchbox input[type="submit"] {
+  outline: none;
+  border: 0px;
+  height: 48px;
+  width: 48px;
+}
+header .midbar .searchbox input[type="submit"]:hover {
+  background: orangered;
+  color: white;
+}
+header .botbar {
+  width: 100%;
+  border-top: 2px solid #cccccc;
+  border-bottom: 2px solid #cccccc;
+}
+header .botbar ul {
+  width: 1226px;
+  margin: 0 auto;
+}
+header .botbar ul li {
+  width: 204px;
+  height: 204px;
+  text-align: center;
+}
+header .botbar ul li img {
+  width: 160px;
+  height: 110px;
+  padding: 10px 20px;
+}
+header .botbar ul li span {
+  line-height: 25px;
+  color: orangered;
+}

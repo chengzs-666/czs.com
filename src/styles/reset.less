@@ -1,0 +1,35 @@
+*{
+    margin: 0;padding: 0;
+}
+.wrapper{
+    width: 1226px;
+    margin: 0 auto;
+}
+ul{
+    &::after{
+        content: '';
+        display: block;
+        height: 0px;
+        overflow: hidden;
+        visibility: hidden;
+        clear: both;
+    }
+    li{
+        float: left;
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: #cccccc;
+        }
+    }
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+}
+i,b,em{
+    font-weight: normal;
+    font-style: normal;
+}
