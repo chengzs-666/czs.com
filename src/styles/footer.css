@@ -1,3 +1,124 @@
-footer {
-  color: red;
+footer .footer-top {
+  border-bottom: 1px solid #cccccc;
+}
+footer .footer-top ul {
+  padding: 20px 0px;
+}
+footer .footer-top ul li {
+  width: 245.2px;
+  box-sizing: border-box;
+  border-right: 1px solid #cccccc;
+  text-align: center;
+}
+footer .footer-top ul li a {
+  font-size: 20px;
+  color: #444444;
+  line-height: 40px;
+}
+footer .footer-top ul li a:hover {
+  color: orangered;
+}
+footer .footer-top ul li a i {
+  font-size: 30px;
+}
+footer .footer-mid {
+  overflow: hidden;
+  padding: 40px 0px;
+}
+footer .footer-mid ul {
+  float: left;
+  width: 160px;
+}
+footer .footer-mid ul span {
+  display: block;
+  margin-bottom: 20px;
+}
+footer .footer-mid ul li {
+  clear: both;
+}
+footer .footer-mid ul li a {
+  line-height: 28px;
+  font-size: 15px;
+  color: #888888;
+}
+footer .footer-mid ul li a:hover {
+  color: orangered;
+}
+footer .footer-mid .telbox {
+  margin-left: 979px;
+  height: 110px;
+  border-left: 1px solid #cccccc;
+  text-align: center;
+}
+footer .footer-mid .telbox p:nth-child(1) {
+  color: orangered;
+  font-size: 20px;
+}
+footer .footer-mid .telbox p:nth-child(2) {
+  color: #444444;
+  line-height: 25px;
+  font-size: 14px;
+}
+footer .footer-mid .telbox a:nth-child(3) {
+  display: block;
+  width: 118px;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid orangered;
+  margin: 0 auto;
+  color: orangered;
+  text-decoration: none;
+}
+footer .footer-mid .telbox a:nth-child(3):hover {
+  color: #ffffff;
+  background: orangered;
+}
+footer .footer-mid .telbox span {
+  font-size: 13px;
+  color: #444444;
+}
+footer .footer-bot {
+  background: #f1f1f1;
+  overflow: hidden;
+}
+footer .footer-bot .footer-logo {
+  background: orangered;
+  width: 57px;
+  height: 57px;
+  float: left;
+}
+footer .footer-bot .footer-text {
+  float: left;
+  overflow: hidden;
+  width: 950px;
+}
+footer .footer-bot .footer-text a {
+  float: left;
+  padding: 0px 6px;
+  font-size: 12px;
+  color: #444444;
+}
+footer .footer-bot .footer-text span {
+  float: left;
+}
+footer .footer-bot .footer-text p {
+  float: left;
+  width: 950px;
+}
+footer .footer-bot .footer-text p a {
+  color: #888888;
+}
+footer .footer-bot .footer-text img {
+  width: 85px;
+  height: 28px;
+  padding-top: 15px;
+}
+footer .footer-bot .footer-footer {
+  clear: both;
+  font-size: 20px;
+  font-family: '华文行楷';
+  text-align: center;
+  color: #888888;
+  line-height: 80px;
+  word-spacing: 3px;
 }

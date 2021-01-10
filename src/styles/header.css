@@ -32,6 +32,7 @@ header .topbar ul:nth-child(1) .downli .downbox {
   left: -30px;
   width: 124px;
   height: 0px;
+  background: white;
   overflow: hidden;
   transition: all 0.2s;
 }
@@ -87,6 +88,9 @@ header .topbar ul:nth-child(2) li .buylink:hover {
 }
 header .topbar ul:nth-child(2) li .buylink:hover .buycar {
   display: block;
+  box-shadow: 3px 3px 3px #cccccc;
+  box-shadow: 0px 3px 3px #cccccc;
+  background: white;
 }
 header .topbar ul:nth-child(2) li .buylink .buycar {
   display: none;
@@ -94,6 +98,7 @@ header .topbar ul:nth-child(2) li .buylink .buycar {
   width: 200px;
   height: 100px;
   right: 0px;
+  z-index: 99;
 }
 header .midbar {
   overflow: hidden;
@@ -107,12 +112,22 @@ header .midbar .logo {
   overflow: hidden;
   position: relative;
 }
+header .midbar .logo .whitebox {
+  width: 55px;
+  height: 55px;
+  background: white;
+  position: absolute;
+  left: 55px;
+  z-index: 999;
+}
 header .midbar .logo img {
   float: left;
   width: 55px;
   height: 55px;
   transform: translate(-55px);
   transition: all 0.2s;
+  user-select: none;
+  cursor: pointer;
 }
 header .midbar .logo:hover img {
   transform: translate(0px);

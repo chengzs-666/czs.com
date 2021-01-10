@@ -32,6 +32,7 @@ header{
                     left: -30px;
                     width: 124px;
                     height: 0px;
+                    background: white;
                     overflow: hidden;
                     transition: all 0.2s;
                     img{
@@ -89,6 +90,10 @@ header{
                         color: orangered;
                         .buycar{
                             display: block;
+                            box-shadow: 3px 3px 3px #cccccc;
+                            box-shadow: 0px 3px 3px #cccccc;
+                            background: white;
+
                         }
                     }
                     .buycar{
@@ -97,6 +102,7 @@ header{
                         width: 200px;
                         height: 100px;
                         right: 0px;
+                        z-index: 99;
                     }
                 }
             }
@@ -106,6 +112,7 @@ header{
     .midbar{
         overflow: hidden;
         padding: 20px 0px;
+        
         .logo{
             float: left;
             width: 110px;
@@ -113,12 +120,22 @@ header{
             background: orangered;
             overflow: hidden;
             position: relative;
+            .whitebox{
+                width: 55px;
+                height: 55px;
+                background: white;
+                position: absolute;
+                left: 55px;
+                z-index: 999;
+            }
             img{
                 float: left;
                 width: 55px;
                 height: 55px;
                 transform: translate(-55px);
                 transition: all 0.2s;
+                user-select: none;
+                cursor: pointer;
             }
             &:hover{
                 img{
