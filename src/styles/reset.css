@@ -38,3 +38,12 @@ em {
   font-weight: normal;
   font-style: normal;
 }
+a {
+  text-decoration: none;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}

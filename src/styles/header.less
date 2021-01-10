@@ -6,8 +6,9 @@
     background-position: 50%
 }
 header{
+    position: relative;
     .topbar{
-        background: #444444;
+        background: #333333;
         &::after{
             content: '';
             display: block;
@@ -28,6 +29,7 @@ header{
                 }
                 .downbox{
                     position: absolute;
+                    z-index: 999;
                     top: 40px;
                     left: -30px;
                     width: 124px;
@@ -49,7 +51,7 @@ header{
             }
             li{
                 a{
-                    font-size: 14px;
+                    font-size: 13px;
                     height: 40px;
                     display: block;
                     padding: 0px 6px;
@@ -79,8 +81,8 @@ header{
                     display: block;
                     width: 120px;
                     text-align: center;
-                    background: #888888;
-                    color: #cccccc;
+                    background: #424242;
+                    color: #9f9f9f;
                     position: relative;
                     span{
                         font-size: 16px;
@@ -102,7 +104,7 @@ header{
                         width: 200px;
                         height: 100px;
                         right: 0px;
-                        z-index: 99;
+                        z-index: 999;
                     }
                 }
             }
@@ -182,7 +184,12 @@ header{
         }
     }
     .botbar{
-        // position: absolute;
+
+        position: absolute;
+        top: 135px;
+        z-index: 99;
+        background: white;
+
         width: 100%;
         border-top: 2px solid #cccccc;
         border-bottom: 2px solid #cccccc;

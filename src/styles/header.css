@@ -5,8 +5,11 @@
   background-size: auto 120px;
   background-position: 50%;
 }
+header {
+  position: relative;
+}
 header .topbar {
-  background: #444444;
+  background: #333333;
 }
 header .topbar::after {
   content: '';
@@ -28,6 +31,7 @@ header .topbar ul:nth-child(1) .downli:hover .downbox {
 }
 header .topbar ul:nth-child(1) .downli .downbox {
   position: absolute;
+  z-index: 999;
   top: 40px;
   left: -30px;
   width: 124px;
@@ -47,7 +51,7 @@ header .topbar ul:nth-child(1) .downli .downbox p {
   line-height: 12px;
 }
 header .topbar ul:nth-child(1) li a {
-  font-size: 14px;
+  font-size: 13px;
   height: 40px;
   display: block;
   padding: 0px 6px;
@@ -75,8 +79,8 @@ header .topbar ul:nth-child(2) li .buylink {
   display: block;
   width: 120px;
   text-align: center;
-  background: #888888;
-  color: #cccccc;
+  background: #424242;
+  color: #9f9f9f;
   position: relative;
 }
 header .topbar ul:nth-child(2) li .buylink span {
@@ -98,7 +102,7 @@ header .topbar ul:nth-child(2) li .buylink .buycar {
   width: 200px;
   height: 100px;
   right: 0px;
-  z-index: 99;
+  z-index: 999;
 }
 header .midbar {
   overflow: hidden;
@@ -168,6 +172,10 @@ header .midbar .searchbox input[type="submit"]:hover {
   color: white;
 }
 header .botbar {
+  position: absolute;
+  top: 135px;
+  z-index: 99;
+  background: white;
   width: 100%;
   border-top: 2px solid #cccccc;
   border-bottom: 2px solid #cccccc;

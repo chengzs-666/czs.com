@@ -33,9 +33,9 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  z-index: 99;
+  z-index: 9;
   padding-top: 20px;
-  background: #888888;
+  background: #a1a3a3;
 }
 .banner-wrapper .banner-list li {
   float: none;
@@ -46,9 +46,10 @@
   height: 40px;
   line-height: 40px;
   text-indent: 2em;
+  color: #ffffff;
 }
 .banner-wrapper .banner-list li em {
-  color: #cccccc;
+  color: #dddddd;
 }
 .banner-wrapper .banner-list li:hover {
   background: orangered;
