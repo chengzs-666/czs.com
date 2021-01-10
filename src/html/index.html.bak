@@ -60,9 +60,11 @@
         </div>
         <div class="midbar">
             <div class="wrapper">
+
                 <div class="logo">
                     <img src="../img/mi-home.png" alt="">
                     <img src="../img/mi-logo.png" alt="">
+                    <div class="whitebox"></div>
                 </div>
                 <ul>
                     <li><a href="#">小米手机</a></li>
@@ -122,10 +124,633 @@
             </div>
         </div>
     </header>
-    <div class="banner">banner</div>
+    <div class="banner">
+        <div class="wrapper banner-wrapper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../img/banner1.jpg" alt="" width="1226" height="460">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/banner2.jpg" alt="" width="1226" height="460">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/banner3.jpg" alt="" width="1226" height="460">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/banner4.jpg" alt="" width="1226" height="460">
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- 如果需要滚动条 -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <script src="../js/library/swiper-3.4.2.min.js"></script>
+            <script>
+                var mySwiper = new Swiper('.swiper-container', {
+                    loop: true,
+
+                    // 如果需要分页器
+                    pagination: '.swiper-pagination',
+
+                    // 如果需要前进后退按钮
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+
+                    // 如果需要滚动条
+                    scrollbar: '.swiper-scrollbar',
+                })
+            </script>
+            <ul class="banner-list">
+                <li>
+                    <a href="#">手机 电话卡</a>
+                    <em class="iconfont">&#xe618;</em>
+                </li>
+                <li>
+                    <a href="#">手机 电话卡</a>
+                    <em class="iconfont">&#xe618;</em>
+                </li>
+                <li>
+                    <a href="#">手机 电话卡</a>
+                    <em class="iconfont">&#xe618;</em>
+                </li>
+                <li>
+                    <a href="#">手机 电话卡</a>
+                    <em class="iconfont">&#xe618;</em>
+                </li>
+                <li>
+                    <a href="#">手机 电话卡</a>
+                    <em class="iconfont">&#xe618;</em>
+                </li>
+                <li>
+                    <a href="#">手机 电话卡</a>
+                    <em class="iconfont">&#xe618;</em>
+                </li>
+                <li>
+                    <a href="#">手机 电话卡</a>
+                    <em class="iconfont">&#xe618;</em>
+                </li>
+                <li>
+                    <a href="#">手机 电话卡</a>
+                    <em class="iconfont">&#xe618;</em>
+                </li>
+                <li>
+                    <a href="#">手机 电话卡</a>
+                    <em class="iconfont">&#xe618;</em>
+                </li>
+                <li>
+                    <a href="#">手机 电话卡</a>
+                    <em class="iconfont">&#xe618;</em>
+                </li>
+            </ul>
+
+            <div class="banner-bot">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <em class="iconfont">&#xe69e;</em>
+                            <span>小米秒杀</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <em class="iconfont">&#xe6bc;</em>
+                            <span>企业团购</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <em class="iconfont">&#xe61f;</em>
+                            <span>F码通道</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <em class="iconfont">&#xe689;</em>
+                            <span>米粉卡</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <em class="iconfont">&#xe607;</em>
+                            <span>以旧换新</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <em class="iconfont">&#xe638;</em>
+                            <span>话费充值</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../img/banner-bot1.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/banner-bot2.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/banner-bot3.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <main>
         <div class="wrapper">
-            main
+            <div class="secsall ">
+                <div class="titlebox ">
+                    <h2>小米闪购</h2>
+                    <span>
+                                <i class="iconfont">&#xe64e;
+                                    </i>
+                                <i class="iconfont">&#xe618;
+                                    </i>                               
+                            </span>
+                </div>
+
+                <div class="timer ">
+                    <p>14:00 场</p>
+                    <img src="data:img/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAA1CAYAAAAklDnhAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ bWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+                                            eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1 MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+                                            dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
+                                            cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5j ZUlEPSJ4bXAuaWlkOjY4Q0ZFMkY5MTJFNzExRThCMkM4OEM1RTNBNjczQUVBIiB4bXBNTTpEb2N1 bWVudElEPSJ4bXAuZGlkOjY4Q0ZFMkZBMTJFNzExRThCMkM4OEM1RTNBNjczQUVBIj4gPHhtcE1N
+                                            OkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NjhDRkUyRjcxMkU3MTFFOEIy Qzg4QzVFM0E2NzNBRUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NjhDRkUyRjgxMkU3MTFF OEIyQzg4QzVFM0E2NzNBRUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94Onht
+                                            cG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5oEyacAAACoklEQVR42sSYv0tbURTHX0LqD6T4g4pE cHDoUOloBxVd/QFFEcQqWtrSKlKFmmAslopohzgIbv4FwUEE0clFujiIi+BSIbRQ0ooKRReRULHf S48Qgu++c3/FAx+iyU3eJzf3nnPuC/1qavQ04zVY8szjCHRGNN9cBD6DSkOJKzAGzsOaH/AW1FuY
+                                            jRg4EH/oiJSCTxYk1sDK7T86Iu9BraHED/Au9wlVkYdg2lAiC/rBhYnIB/DIUOQj2M9/UkWkCsQN JbbA8l0vqIhMgXIDiZ/gFbgxEakBEwYSf8Eg+OM3gCsyA8oMRETy25UN4IjUgVEDiW2wGDSIIzIL ijUljsFLv3WhIvKYFphOXNO6OOUMDhKZA7qFcQF85Q6WXeQpeKEpcULlvY8xthp8iwR8I93qLLb7
+                                            KnOsSPWNfhd6Bro99yHqTi9IhyWzEXIsIXbSG7Djt1jbQHsBZkMkyZRs13wpgIRoiJKy7dsBWh1L bN5Vt3JFQrQ2XMYeGKBk5yvSI7aRQ4k0eA4uZZlVPM47lDgTZxd6lKb4AcqkLuKSZiIdVGsiVFNc xDV9yT1Orekjoe+MDw4pHqwmaJewit66Ql0QaX+DOTaZe4DitAFZxQaaEynKnJ6KCDeaQAtj3A7V
+                                            kBtXIpwT3iFV06zqquaKPKEtKIsM6Mo/StoWiQeMvSCJjO4+54hEwTCjuTk0STgckUm6QxTY3LgU Kc+/jyFrblyKCIkKbnPjSkT8HDGV5saVyBAtVHZz40Ik7HNTRtrcuBARF2tQbW5ciCR0mhvbIs2E cnNjWySh29zYFGnIK25KzY1Nkdziptzc2BKJUu7Qbm5sicQom2o3NzZEKqiu/DZpbmyIjIAHNBMZ
+                                            7x4iTALjhcgVQSIl3v87w5vePcY/AQYAFYR6skFSqBUAAAAASUVORK5CYII=" alt=" ">
+                    <p>距离结束还有</p>
+                    <span>00</span><i>:</i><span>16</span><i>:</i><span>56</span>
+                </div>
+                <div class="sallboxs ">
+                    <ul>
+                        <li>
+                            <a href="# ">
+                                <div class="sallbox ">
+                                    <img src="../img/sallbox1.webp " alt=" ">
+                                </div>
+                                <p>日常元素抽纸 青春版 24包/箱</p>
+                                <p>精选原生竹浆，健康环保</p>
+                                <span>27.9元</span><del>32.9元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <div class="sallbox ">
+                                    <img src="../img/sallbox2.webp " alt=" ">
+                                </div>
+                                <p>RedmiBook 16 i5 16G 512G MX350 灰色</p>
+                                <p>便携大屏，全“芯”超越</p>
+                                <span>4499元</span><del>4999元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <div class="sallbox ">
+                                    <img src="../img/sallbox3.webp " alt=" ">
+                                </div>
+                                <p>小米移动电源3 10000mAh超级闪充版（50W）​ 黑色</p>
+                                <p>大容量，超级闪充</p>
+                                <span>179元</span><del>249元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <div class="sallbox ">
+                                    <img src="../img/sallbox4.webp " alt=" ">
+                                </div>
+                                <p>米兔儿童电话手表4C 蓝色</p>
+                                <p>能视频通话的4G电话手表</p>
+                                <span>379元</span><del>399元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <div class="sallbox ">
+                                    <img src="../img/sallbox5.webp " alt=" ">
+                                </div>
+                                <p>日常元素抽纸 青春版 24包/箱</p>
+                                <p>精选原生竹浆，健康环保</p>
+                                <span>27.9元</span><del>32.9元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <div class="sallbox ">
+                                    <img src="../img/sallbox6.webp " alt=" ">
+                                </div>
+                                <p>日常元素抽纸 青春版 24包/箱</p>
+                                <p>精选原生竹浆，健康环保</p>
+                                <span>27.9元</span><del>32.9元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <div class="sallbox ">
+                                    <img src="../img/sallbox7.webp " alt=" ">
+                                </div>
+                                <p>日常元素抽纸 青春版 24包/箱</p>
+                                <p>精选原生竹浆，健康环保</p>
+                                <span>27.9元</span><del>32.9元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <div class="sallbox ">
+                                    <img src="../img/sallbox8.webp " alt=" ">
+                                </div>
+                                <p>日常元素抽纸 青春版 24包/箱</p>
+                                <p>精选原生竹浆，健康环保</p>
+                                <span>27.9元</span><del>32.9元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <div class="sallbox ">
+                                    <img src="../img/sallbox9.webp " alt=" ">
+                                </div>
+                                <p>日常元素抽纸 青春版 24包/箱</p>
+                                <p>精选原生竹浆，健康环保</p>
+                                <span>27.9元</span><del>32.9元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <div class="sallbox ">
+                                    <img src="../img/sallbox10.webp " alt=" ">
+                                </div>
+                                <p>日常元素抽纸 青春版 24包/箱</p>
+                                <p>精选原生竹浆，健康环保</p>
+                                <span>27.9元</span><del>32.9元</del>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <img src="../img/pic1.webp " alt=" " width="1226 " height="120 " style="margin: 25px 0px; ">
+
+            <div class="phone">
+                <div class="titlebox">
+                    <h2>手机</h2>
+                    <div class="more">
+                        <span>查看全部</span>
+                        <em class="iconfont">&#xe618;</em>
+                    </div>
+                </div>
+                <div class="sellbox">
+                    <div class="mainsell">
+                        <img src="../img/mainphone11.jpeg" alt="">
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/phonesell2.webp " alt=" ">
+                                <p>小米11</p>
+                                <p>骁龙888 | 2K四曲面屏</p>
+                                <span>3999元起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/phonesell3.webp " alt=" ">
+                                <p>Note 9 Pro</p>
+                                <p>一亿像素夜景相机 六档变速高刷屏</p>
+                                <span>1599元起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/phonesell4.webp " alt=" ">
+                                <p>Note 9</p>
+                                <p>天玑 800U处理器，5000mAh电池</p>
+                                <span>1299元起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/phonesell5.webp " alt=" ">
+                                <p>Note 9 4G</p>
+                                <p>6000mAh长续航</p>
+                                <span>999元起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/phonesell3.webp " alt=" ">
+                                <p>小米11</p>
+                                <p>骁龙888 | 2K四曲面屏</p>
+                                <span>3999元起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/phonesell4.webp " alt=" ">
+                                <p>小米11</p>
+                                <p>骁龙888 | 2K四曲面屏</p>
+                                <span>3999元起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/phonesell5.webp " alt=" ">
+                                <p>小米11</p>
+                                <p>骁龙888 | 2K四曲面屏</p>
+                                <span>3999元起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/phonesell2.webp " alt=" ">
+                                <p>小米11</p>
+                                <p>骁龙888 | 2K四曲面屏</p>
+                                <span>3999元起</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <img src="../img/pic2.webp " alt=" " width="1226 " height="120 " style="margin: 25px 0px; ">
+
+            <div class="smart">
+                <div class="titlebox">
+                    <h2>智能</h2>
+                    <ul>
+                        <li>热门</li>
+                        <li>安防</li>
+                        <li>出行</li>
+                    </ul>
+                </div>
+                <div class="sellbox">
+                    <ul class="mainsell">
+                        <li>
+                            <a href="# ">
+                                <img src="../img/main3.webp " alt=" " width="234 " height="300 ">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/main4.webp " alt=" " width="234 " height="300 ">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="lisell1 ">
+                        <li>
+                            <a href="# ">
+                                <img src="../img/zn1.webp " alt=" ">
+                                <p>小米小爱音箱 Play</p>
+                                <p>听音乐、语音遥控家电</p>
+                                <span>99元</span><del>169元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/zn2.webp " alt=" ">
+                                <p>米家智能窗帘</p>
+                                <p>窗帘开合随心控</p>
+                                <span>799元</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/zn3.webp " alt=" ">
+                                <p>小米体脂秤2</p>
+                                <p>轻松掌握身体脂肪率</p>
+                                <span>99元</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/zn4.jpg " alt=" ">
+                                <p>九号平衡车</p>
+                                <p>年轻人的酷玩具</p>
+                                <span>1999元</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/jd1.webp " alt=" ">
+                                <p>Redmi 红米电视 70英寸</p>
+                                <p>70英寸震撼巨屏，4K画质，细腻如真</p>
+                                <span>3299元</span><del>3799元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/jd1.webp " alt=" ">
+                                <p>Redmi 红米电视 70英寸</p>
+                                <p>70英寸震撼巨屏，4K画质，细腻如真</p>
+                                <span>3299元</span><del>3799元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/jd1.webp " alt=" ">
+                                <p>Redmi 红米电视 70英寸</p>
+                                <p>70英寸震撼巨屏，4K画质，细腻如真</p>
+                                <span>3299元</span><del>3799元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="litop ">
+                                <div class="litopleft ">
+                                    <p>米家空气净化器Pro</p>
+                                    <span>1299元</span>
+                                </div>
+                                <div class="litopright ">
+                                    <img src="../img/litop2.webp " alt=" ">
+                                </div>
+                            </div>
+                            <div class="libot ">
+                                <div class="libotleft ">
+                                    <p>浏览更多</p>
+                                    <b>热门</b>
+                                </div>
+                                <div class="libotright ">
+                                    <i class="iconfont">&#xe618;</i>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <ul class="lisell2 ">
+                        <li>
+                            <a href="# ">
+                                <img src="../img/zn1.webp " alt=" ">
+                                <p>小米小爱音箱 Play</p>
+                                <p>听音乐、语音遥控家电</p>
+                                <span>99元</span><del>169元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/zn2.webp " alt=" ">
+                                <p>米家智能窗帘</p>
+                                <p>窗帘开合随心控</p>
+                                <span>799元</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/zn3.webp " alt=" ">
+                                <p>小米体脂秤2</p>
+                                <p>轻松掌握身体脂肪率</p>
+                                <span>99元</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/zn4.jpg " alt=" ">
+                                <p>九号平衡车</p>
+                                <p>年轻人的酷玩具</p>
+                                <span>1999元</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/jd1.webp " alt=" ">
+                                <p>Redmi 红米电视 70英寸</p>
+                                <p>70英寸震撼巨屏，4K画质，细腻如真</p>
+                                <span>3299元</span><del>3799元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/jd1.webp " alt=" ">
+                                <p>Redmi 红米电视 70英寸</p>
+                                <p>70英寸震撼巨屏，4K画质，细腻如真</p>
+                                <span>3299元</span><del>3799元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/jd1.webp " alt=" ">
+                                <p>Redmi 红米电视 70英寸</p>
+                                <p>70英寸震撼巨屏，4K画质，细腻如真</p>
+                                <span>3299元</span><del>3799元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="litop ">
+                                <div class="litopleft ">
+                                    <p>米家空气净化器Pro</p>
+                                    <span>1299元</span>
+                                </div>
+                                <div class="litopright ">
+                                    <img src="../img/litop2.webp " alt=" ">
+                                </div>
+                            </div>
+                            <div class="libot ">
+                                <div class="libotleft ">
+                                    <p>浏览更多</p>
+                                    <b>热门</b>
+                                </div>
+                                <div class="libotright ">
+                                    <i class="iconfont">&#xe618;</i>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <ul class="lisell3 ">
+                        <li>
+                            <a href="# ">
+                                <img src="../img/zn1.webp " alt=" ">
+                                <p>小米小爱音箱 Play</p>
+                                <p>听音乐、语音遥控家电</p>
+                                <span>99元</span><del>169元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/zn2.webp " alt=" ">
+                                <p>米家智能窗帘</p>
+                                <p>窗帘开合随心控</p>
+                                <span>799元</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/zn3.webp " alt=" ">
+                                <p>小米体脂秤2</p>
+                                <p>轻松掌握身体脂肪率</p>
+                                <span>99元</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/zn4.jpg " alt=" ">
+                                <p>九号平衡车</p>
+                                <p>年轻人的酷玩具</p>
+                                <span>1999元</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/jd1.webp " alt=" ">
+                                <p>Redmi 红米电视 70英寸</p>
+                                <p>70英寸震撼巨屏，4K画质，细腻如真</p>
+                                <span>3299元</span><del>3799元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/jd1.webp " alt=" ">
+                                <p>Redmi 红米电视 70英寸</p>
+                                <p>70英寸震撼巨屏，4K画质，细腻如真</p>
+                                <span>3299元</span><del>3799元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="../img/jd1.webp " alt=" ">
+                                <p>Redmi 红米电视 70英寸</p>
+                                <p>70英寸震撼巨屏，4K画质，细腻如真</p>
+                                <span>3299元</span><del>3799元</del>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="litop ">
+                                <div class="litopleft ">
+                                    <p>米家空气净化器Pro</p>
+                                    <span>1299元</span>
+                                </div>
+                                <div class="litopright ">
+                                    <img src="../img/litop2.webp " alt=" ">
+                                </div>
+                            </div>
+                            <div class="libot ">
+                                <div class="libotleft ">
+                                    <p>浏览更多</p>
+                                    <b>热门</b>
+                                </div>
+                                <div class="libotright ">
+                                    <i class="iconfont">&#xe618;</i>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </main>
     <footer>footer</footer>
