@@ -62,10 +62,12 @@ main .secsall .sallboxs {
   overflow: hidden;
   width: 992px;
   height: 300px;
+  position: relative;
 }
 main .secsall .sallboxs ul {
   overflow: hidden;
   width: 3000px;
+  position: absolute;
 }
 main .secsall .sallboxs ul li {
   float: left;
@@ -431,6 +433,10 @@ main .video .videobox div img {
   width: 296px;
   height: 180px;
 }
+main .video .videobox div .videobtn {
+  background: orangered;
+  border: 1px solid orangered;
+}
 main .video .videobox div i:nth-child(2) {
   position: absolute;
   top: 150px;
@@ -445,10 +451,6 @@ main .video .videobox div i:nth-child(2) {
   border-radius: 10px;
   color: white;
   font-size: 14px;
-}
-main .video .videobox div i:nth-child(2):hover {
-  background: orangered;
-  border: 1px solid orangered;
 }
 main .video .videobox div p:nth-child(3) {
   text-align: center;

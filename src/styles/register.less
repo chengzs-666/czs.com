@@ -1,0 +1,139 @@
+@charset 'utf-8';
+
+@import './reset.less';
+
+main{
+    background: #f1f1f1;
+    padding-top: 5%;
+    .wrapper{
+        width: 786px;
+        background: white;
+        text-align: center;
+        form{
+            width: 332px;
+            margin: 0 auto;
+            input{
+                border: 1px solid #cccccc;
+                outline: 0px;
+                width: 332px;
+                height: 32px;
+                margin: 5px 0px 10px;
+                text-indent: 1em;
+            }
+            img{
+                width: 46px;
+                height: 46px;
+                background: orangered;
+            }
+            h1{
+               font-size: 30px;
+               line-height: 95px; 
+            }
+            h3{
+                text-align: left;
+                font-size: 14px;
+                line-height: 20px;
+                color: #222222;
+            }
+            select[name="address"]{
+                width: 330px;
+                height: 32px;
+                outline: 0px;
+                border: 1px solid #cccccc;
+                margin: 5px 0px;
+                text-indent: 1em;
+                color: #888888;
+            }
+            p{
+                text-align: left;
+                font-size: 14px;
+                color: #888888;
+                padding-bottom: 16px;
+            }
+            .addressbox{
+                width: 330px;
+                // border: 1px solid #f66;
+                border: 1px solid #cccccc;
+                height: 32px;
+                line-height: 32px;
+                font-size: 0;
+                margin: 5px 0px;
+                overflow: hidden;
+                margin-bottom:18px; 
+                >select{
+                    border: 0px;
+                    outline: 0px;
+                    height: 32px;
+                    width: 68px;
+                    float: left;
+                }
+                >input{
+                    border: 0px;
+                    width: 254px;
+                    outline: 0px;
+                    height: 32px;
+                    float: left;
+                    text-indent: 1em;
+                    margin: 0px;
+                }
+            }
+            .sexbox{
+                overflow: hidden;
+                >span{
+                    float: left;
+                    line-height: 26px;
+                }
+                >input{
+                    float: left;
+                    width: 18px;
+                    height: 18px;
+                    margin-left: 5px;
+                    margin-right: 10px;
+                }
+            }
+            input[type="submit"]{
+                border: 0px;
+                background: orangered;
+                width: 332px;
+                height: 32px;
+                color: white;
+                user-select: none;
+                cursor: pointer;
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+            .xy{
+                padding: 40px 0px;
+                line-height: 32px;
+                text-align: center;
+                a{
+                    color: #222222;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    height: 80;
+    padding-top: 100px;
+    text-align: center;
+    p:nth-child(1){
+        a{
+            padding: 0px 7px;
+            line-height: 30px;
+            color: #888888;
+            &:hover{
+                color: #444444;
+            }
+        }
+        .active{
+            color: #444444;
+        }
+    }
+    p:nth-child(2){
+        line-height: 30px;
+        color: #888888;
+    }
+}

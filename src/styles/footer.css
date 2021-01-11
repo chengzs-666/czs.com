@@ -22,8 +22,15 @@ footer .footer-top ul li a i {
   font-size: 30px;
 }
 footer .footer-mid {
-  overflow: hidden;
   padding: 40px 0px;
+}
+footer .footer-mid::after {
+  content: '';
+  display: block;
+  height: 0px;
+  overflow: hidden;
+  clear: both;
+  visibility: hidden;
 }
 footer .footer-mid ul {
   float: left;
@@ -93,7 +100,6 @@ footer .footer-mid .telbox .vx img {
   position: absolute;
   top: 32px ;
   right: 10px;
-  display: none;
 }
 footer .footer-footer {
   background: #fafafa;

@@ -48,6 +48,10 @@ a {
 .show {
   display: block;
 }
+.videobtn {
+  border: 1px solid orangered;
+  background: orangered;
+}
 .head-head {
   height: 120px;
   display: block;
@@ -229,10 +233,12 @@ header .botbar {
   width: 100%;
   border-top: 2px solid #cccccc;
   border-bottom: 2px solid #cccccc;
+  height: 0px;
 }
 header .botbar ul {
   width: 1226px;
   margin: 0 auto;
+  overflow: hidden;
 }
 header .botbar ul li {
   width: 204px;
@@ -286,6 +292,48 @@ header .botbar ul li span {
   z-index: 9;
   padding-top: 20px;
   background: #a1a3a3;
+}
+.banner-wrapper .banner-list .banner-nav {
+  position: absolute;
+  left: 234px;
+  top: 0px;
+  width: 992px;
+  height: 460px;
+  background: white;
+  box-shadow: 5px 5px 5px #cccccc;
+  border-top: 1px solid #cccccc;
+}
+.banner-wrapper .banner-list .banner-nav > li {
+  position: absolute;
+}
+.banner-wrapper .banner-list .banner-nav > li > ul {
+  float: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.banner-wrapper .banner-list .banner-nav > li > ul li {
+  float: none;
+  width: 185px;
+  padding: 18px 20px;
+}
+.banner-wrapper .banner-list .banner-nav > li > ul li a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+}
+.banner-wrapper .banner-list .banner-nav > li > ul li a span {
+  color: #444444;
+  line-height: 40px;
+  padding: 0px 20px;
+  vertical-align: middle;
+}
+.banner-wrapper .banner-list .banner-nav > li > ul li a span:hover {
+  color: orangered;
+}
+.banner-wrapper .banner-list .banner-nav > li > ul li a img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
 }
 .banner-wrapper .banner-list li {
   float: none;
@@ -409,10 +457,12 @@ main .secsall .sallboxs {
   overflow: hidden;
   width: 992px;
   height: 300px;
+  position: relative;
 }
 main .secsall .sallboxs ul {
   overflow: hidden;
   width: 3000px;
+  position: absolute;
 }
 main .secsall .sallboxs ul li {
   float: left;
@@ -778,6 +828,10 @@ main .video .videobox div img {
   width: 296px;
   height: 180px;
 }
+main .video .videobox div .videobtn {
+  background: orangered;
+  border: 1px solid orangered;
+}
 main .video .videobox div i:nth-child(2) {
   position: absolute;
   top: 150px;
@@ -792,10 +846,6 @@ main .video .videobox div i:nth-child(2) {
   border-radius: 10px;
   color: white;
   font-size: 14px;
-}
-main .video .videobox div i:nth-child(2):hover {
-  background: orangered;
-  border: 1px solid orangered;
 }
 main .video .videobox div p:nth-child(3) {
   text-align: center;
@@ -833,8 +883,15 @@ footer .footer-top ul li a i {
   font-size: 30px;
 }
 footer .footer-mid {
-  overflow: hidden;
   padding: 40px 0px;
+}
+footer .footer-mid::after {
+  content: '';
+  display: block;
+  height: 0px;
+  overflow: hidden;
+  clear: both;
+  visibility: hidden;
 }
 footer .footer-mid ul {
   float: left;
@@ -904,7 +961,6 @@ footer .footer-mid .telbox .vx img {
   position: absolute;
   top: 32px ;
   right: 10px;
-  display: none;
 }
 footer .footer-footer {
   background: #fafafa;

@@ -66,10 +66,11 @@ main{
             overflow: hidden;
             width: 992px;
             height: 300px;
-            
+            position: relative;
             ul{
                 overflow: hidden;
                 width: 3000px;
+                position: absolute;
                 li{
                     float: left;
                     width: 234px;
@@ -463,6 +464,10 @@ main{
                     height: 180px;
                     
                 }
+                .videobtn{
+                    background: orangered;
+                    border: 1px solid orangered;
+                }
                 i:nth-child(2){
                     position: absolute;
                     top: 150px;
@@ -477,10 +482,6 @@ main{
                     border-radius: 10px;
                     color: white;
                     font-size: 14px;
-                    &:hover{
-                        background: orangered;
-                        border: 1px solid orangered;
-                    }
                 }
                 p:nth-child(3){
                     text-align: center;

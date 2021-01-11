@@ -37,6 +37,48 @@
   padding-top: 20px;
   background: #a1a3a3;
 }
+.banner-wrapper .banner-list .banner-nav {
+  position: absolute;
+  left: 234px;
+  top: 0px;
+  width: 992px;
+  height: 460px;
+  background: white;
+  box-shadow: 5px 5px 5px #cccccc;
+  border-top: 1px solid #cccccc;
+}
+.banner-wrapper .banner-list .banner-nav > li {
+  position: absolute;
+}
+.banner-wrapper .banner-list .banner-nav > li > ul {
+  float: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.banner-wrapper .banner-list .banner-nav > li > ul li {
+  float: none;
+  width: 185px;
+  padding: 18px 20px;
+}
+.banner-wrapper .banner-list .banner-nav > li > ul li a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+}
+.banner-wrapper .banner-list .banner-nav > li > ul li a span {
+  color: #444444;
+  line-height: 40px;
+  padding: 0px 20px;
+  vertical-align: middle;
+}
+.banner-wrapper .banner-list .banner-nav > li > ul li a span:hover {
+  color: orangered;
+}
+.banner-wrapper .banner-list .banner-nav > li > ul li a img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
 .banner-wrapper .banner-list li {
   float: none;
 }

@@ -24,7 +24,15 @@ footer{
     }
 
     .footer-mid{
-        overflow: hidden;
+        // overflow: hidden;
+        &::after{
+            content: '';
+            display: block;
+            height: 0px;
+            overflow: hidden;
+            clear: both;
+            visibility: hidden;
+        }
         padding: 40px 0px;
         ul{
             float: left;
@@ -94,7 +102,6 @@ footer{
                     position: absolute;
                     top: 32px ;
                     right: 10px;
-                    display: none;
                 }
             }
         }

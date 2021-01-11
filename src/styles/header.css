@@ -179,10 +179,12 @@ header .botbar {
   width: 100%;
   border-top: 2px solid #cccccc;
   border-bottom: 2px solid #cccccc;
+  height: 0px;
 }
 header .botbar ul {
   width: 1226px;
   margin: 0 auto;
+  overflow: hidden;
 }
 header .botbar ul li {
   width: 204px;
