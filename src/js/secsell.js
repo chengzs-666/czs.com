@@ -8,7 +8,7 @@ $(function() {
                 left: '+=248'
             }, 300, function() {
                 _index -= 1
-                console.log(_index)
+                    // console.log(_index)
             })
         }
     })
@@ -19,7 +19,7 @@ $(function() {
                 left: '-=248'
             }, 300, function() {
                 _index += 1
-                console.log(_index)
+                    // console.log(_index)
             })
         }
     })
