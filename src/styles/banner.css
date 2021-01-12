@@ -37,7 +37,13 @@
   padding-top: 20px;
   background: #a1a3a3;
 }
-.banner-wrapper .banner-list .banner-nav {
+.banner-wrapper .banner-list > li {
+  float: none;
+}
+.banner-wrapper .banner-list > li:hover .banner-nav {
+  display: block;
+}
+.banner-wrapper .banner-list > li .banner-nav {
   position: absolute;
   left: 234px;
   top: 0px;
@@ -46,43 +52,33 @@
   background: white;
   box-shadow: 5px 5px 5px #cccccc;
   border-top: 1px solid #cccccc;
+  display: none;
 }
-.banner-wrapper .banner-list .banner-nav > li {
-  position: absolute;
-}
-.banner-wrapper .banner-list .banner-nav > li > ul {
-  float: none;
-  display: flex;
-  flex-wrap: wrap;
-}
-.banner-wrapper .banner-list .banner-nav > li > ul li {
-  float: none;
+.banner-wrapper .banner-list > li .banner-nav > li {
   width: 185px;
   padding: 18px 20px;
+  display: inline-block;
 }
-.banner-wrapper .banner-list .banner-nav > li > ul li a {
+.banner-wrapper .banner-list > li .banner-nav > li a {
   display: block;
   height: 40px;
   line-height: 40px;
 }
-.banner-wrapper .banner-list .banner-nav > li > ul li a span {
+.banner-wrapper .banner-list > li .banner-nav > li a span {
   color: #444444;
   line-height: 40px;
   padding: 0px 20px;
   vertical-align: middle;
 }
-.banner-wrapper .banner-list .banner-nav > li > ul li a span:hover {
+.banner-wrapper .banner-list > li .banner-nav > li a span:hover {
   color: orangered;
 }
-.banner-wrapper .banner-list .banner-nav > li > ul li a img {
+.banner-wrapper .banner-list > li .banner-nav > li a img {
   width: 40px;
   height: 40px;
   vertical-align: middle;
 }
-.banner-wrapper .banner-list li {
-  float: none;
-}
-.banner-wrapper .banner-list li a {
+.banner-wrapper .banner-list > li > a {
   display: inline-block;
   width: 200px;
   height: 40px;
@@ -90,10 +86,10 @@
   text-indent: 2em;
   color: #ffffff;
 }
-.banner-wrapper .banner-list li em {
+.banner-wrapper .banner-list > li em {
   color: #dddddd;
 }
-.banner-wrapper .banner-list li:hover {
+.banner-wrapper .banner-list > li:hover {
   background: orangered;
 }
 .banner-wrapper .banner-bot {

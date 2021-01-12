@@ -24,24 +24,4 @@ $(function() {
             console.log('no');
         }).removeClass('show').addClass('hide');
     })
-
-
-    // $('.banner-list').on('mouseenter', function(ev) {
-    //     console.log(ev.target.nodeName)
-    //     switch (ev.target.nodeName) {
-    //         case 'A':
-    //             console.log(1);
-    //             break;
-    //     }
-    // })
-    oli.on('mouseenter', function() {
-        $('.banner-nav').removeClass('hide').addClass('show');
-        let index = oli.index(this);
-        $('.banner-nav>li').eq(index).removeClass('hide').addClass('show');
-    })
-    oli.on('mouseleave', function() {
-        let index = oli.index(this);
-        $('.banner-nav>li').eq(index).removeClass('show').addClass('hide')
-        $('.banner-nav').removeClass('show').addClass('hide');
-    })
 })

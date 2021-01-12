@@ -37,51 +37,50 @@
         z-index: 9;
         padding-top:20px;
         background: #a1a3a3;
-        .banner-nav{
-            position: absolute;
-            left: 234px;
-            top: 0px;
-            width: 992px;
-            height: 460px;
-            background: white;
-            box-shadow: 5px 5px 5px #cccccc;
-            border-top: 1px solid #cccccc;
-            >li{
+        
+        >li{
+            float: none;
+            &:hover{
+                .banner-nav{
+                    display: block;
+                }
+            }
+            .banner-nav{
                 position: absolute;
-                >ul{
-                    float: none;
-                    display: flex;
-                    flex-wrap:wrap; 
-                    li{
-                        float: none;
-                        width: 185px;
-                        padding: 18px 20px;
-                        a{
-                            display: block;
-                            height: 40px;
+                left: 234px;
+                top: 0px;
+                width: 992px;
+                height: 460px;
+                background: white;
+                box-shadow: 5px 5px 5px #cccccc;
+                border-top: 1px solid #cccccc;
+                display: none;
+                >li{
+                    width: 185px;
+                    padding: 18px 20px;
+                    display: inline-block;
+                    a{
+                        display: block;
+                        height: 40px;
+                        line-height: 40px;
+                        span{
+                            color: #444444;
                             line-height: 40px;
-                            span{
-                                color: #444444;
-                                line-height: 40px;
-                                padding: 0px 20px;
-                                vertical-align: middle;
-                                &:hover{
-                                    color: orangered;
-                                }
+                            padding: 0px 20px;
+                            vertical-align: middle;
+                            &:hover{
+                                color: orangered;
                             }
-                            img{
-                                width: 40px;
-                                height: 40px;
-                                vertical-align: middle;
-                            }
+                        }
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            vertical-align: middle;
                         }
                     }
                 }
             }
-        }
-        li{
-            float: none;
-            a{
+            >a{
                 display: inline-block;
                 width: 200px;
                 height: 40px;
