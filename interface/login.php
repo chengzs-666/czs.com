@@ -15,7 +15,7 @@
         setcookie('isLogined',true,time()+3600*24,'/');
 
         echo "<script>alert('登陆成功')</script>";
-        echo "<script>location.href='../03.admin.php'</script>";
+        echo "<script>location.href='../src/html/shopcar.html'</script>";
     }else{
         echo "<script>alert('账号或密码错误')</script>";
         echo "<script>location.href='../src/html/login.html'</script>";

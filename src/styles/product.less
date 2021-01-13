@@ -116,6 +116,23 @@ main{
                     font-size: 18px;
                     line-height: 30px;
                 }
+                #addbtn{
+                    user-select: none;
+                    cursor: pointer;
+                    background: orangered;
+                    font-size: 20px;
+                    color: white;
+                    text-indent: 1em;
+                    height: 52px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    border: 1px solid #cccccc;
+                    outline: none;
+                    margin:5px 0px 20px;
+                    &:hover{
+                        opacity: 0.7;
+                    }
+                }
                 input{
                     text-indent: 1em;
                     height: 52px;
@@ -126,16 +143,6 @@ main{
                     margin:5px 0px 20px;
                     &[type="number"]{
                         text-indent: 23em;
-                    }
-                    &[type="submit"]{
-                        user-select: none;
-                        cursor: pointer;
-                        background: orangered;
-                        font-size: 20px;
-                        color: white;
-                        &:hover{
-                            opacity: 0.7;
-                        }
                     }
                 }
             }

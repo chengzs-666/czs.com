@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../iconfont/iconfont.css">
     <link rel="stylesheet" href="../styles/product.css">
     <script src="../js/library/jquery.js"></script>
+    <script src="../js/library/cookie.js"></script>
     <script src="../js/product.js"></script>
 </head>
 
@@ -44,14 +45,14 @@
                     <li><a href="./register.html">注册</a></li>
                     <li><a href="#">消息通知</a></li>
                     <li>
-                        <a href="#" class="buylink">
+                        <a href="./shopcar.html" class="buylink">
                             <span>
                                 <em class="iconfont">&#xe64c;</em>
                                 <i>购物车</i>
-                                （<b>0</b>）
+                                （<b id="shopsum">0</b>）
                             </span>
                             <div class="buycar">
-                                购物车中还没有商品，赶紧选购吧
+                                进入购物车
                             </div>
                         </a>
                     </li>
@@ -294,7 +295,6 @@
     <main>
         <div class="wrapper">
             <div class="imgbox">
-                <img src="../img/product1.jpg" alt="">
             </div>
             <div class="shopbox">
                 <h3 class="main-title"></h3>
@@ -312,12 +312,13 @@
                 </div>
                 <form action="#" method="GET">
                     <h5>邮寄地址</h5>
-                    <input type="text" placeholder="浙江省杭州市江干区" name="add">
+                    <input type="text" placeholder="浙江省杭州市江干区" id="useradd">
                     <h5>剩余库存</h5>
                     <p id="num"></p>
                     <h5>选购数量</h5>
-                    <input type="number" name="usernum" min="1" max="num">
-                    <input type="submit" value="加入购物车">
+                    <input type="number" id="usernum" min="1" max="num">
+                    <!-- <input type="submit" value="加入购物车" id="subbtn"> -->
+                    <button id="addbtn" class="addbtn">加入购物车</button>
                 </form>
                 <span><i class="iconfont">&#xe87e;</i>小米自营</span>
                 <span><i class="iconfont">&#xe87e;</i>小米发货</span>
@@ -335,10 +336,7 @@
             <li><a href="#">商品参数</a></li>
         </ul>
         <div class="details">
-            <div class="wrapper">
-                <img src="../img/d5-1.png" alt="">
-                <img src="../img/d5-2.jpg" alt="">
-                <img src="../img/d5-3.jpg" alt="">
+            <div class="wrapper detailbox">
             </div>
         </div>
     </div>

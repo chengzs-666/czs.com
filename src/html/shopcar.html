@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mi.shopcar</title>
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../styles/shopcar.css">
+    <script src="../js/library/jquery.js"></script>
+    <script src="../js/library/cookie.js"></script>
+    <script src="../js/shopcar.js"></script>
+</head>
+
+<body style="position: relative;">
+
+    <header>
+        <div class="wrapper">
+            <div class="header-left">
+
+                <img src="../img/mi-logo.png" alt="">
+                <h2>我的购物车</h2>
+            </div>
+            <ul class="header-right">
+                <li>
+                    <a href="#">
+                        <span id="username"></span>
+                        <em class="iconfont">&#xe61a;</em>
+                    </a>
+                    <ul>
+                        <li><a href="#">个人中心</a></li>
+                        <li><a href="#">评价晒单</a></li>
+                        <li><a href="#">我的喜欢</a></li>
+                        <li><a href="#">小米账户</a></li>
+                        <li><a href="./index.html" id="loginout">退出登录</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">我的订单</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <form class="totalbox" action="#">
+                <ul id="itemlist">
+                    <li class="title-list">
+                        <input type="checkbox" id="all"><span>全选</span><span>商品名称</span><span>单价</span>
+                        <span>数量</span>
+                        <span>小计</span>
+                        <span>操作</span>
+                    </li>
+
+                </ul>
+                <div class="total-total">
+                    <div class="total-left">
+                        <a href="#">继续购物</a>
+                        <span>|</span>
+                        <span>共 <i>2</i> 件商品，已选择 <i>0</i>件 </span>
+                    </div>
+                    <div class="total-right">
+                        <span>合计：<i>0</i>元</span>
+                        <input type="submit" value="去结算">
+                    </div>
+            </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="footer-top ">
+                <ul>
+                    <li>
+                        <a href="# ">
+                            <i class="iconfont ">&#xe681;</i> 预约维修服务
+                        </a>
+                    </li>
+                    <li>
+                        <a href="# ">
+                            <i class="iconfont ">&#xe63d;</i> 7天无理由退货
+                        </a>
+                    </li>
+                    <li>
+                        <a href="# ">
+                            <i class="iconfont ">&#xe607;</i> 15天免费换货
+                        </a>
+                    </li>
+                    <li>
+                        <a href="# ">
+                            <i class="iconfont ">&#xe61b;
+                                        </i> 满99元包邮
+                        </a>
+                    </li>
+                    <li style="border-right: 0px;">
+                        <a href="#">
+                            <i class="iconfont ">&#xe739;</i> 520余家售后服务
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-mid ">
+                <ul>
+                    <span>帮助中心</span>
+                    <li><a href="# ">账户管理</a></li>
+                    <li><a href="# ">购物指南</a></li>
+                    <li><a href="# ">订单操作</a></li>
+                </ul>
+                <ul>
+                    <span>服务支持</span>
+                    <li><a href="# ">售后政策</a></li>
+                    <li><a href="# ">自助服务</a></li>
+                    <li><a href="# ">相关下载</a></li>
+                </ul>
+                <ul>
+                    <span>线下门店</span>
+                    <li><a href="# ">小米之家</a></li>
+                    <li><a href="# ">服务网点</a></li>
+                    <li><a href="# ">授权体验店</a></li>
+                </ul>
+                <ul>
+                    <span>关于小米</span>
+                    <li><a href="# ">了解小米</a></li>
+                    <li><a href="# ">加入小米</a></li>
+                    <li><a href="# ">投资者关系</a></li>
+                    <li><a href="# ">企业社会责任</a></li>
+                    <li><a href="# ">廉洁举报</a></li>
+                </ul>
+                <ul>
+                    <span>关注我们</span>
+                    <li><a href="# ">新浪微博</a></li>
+                    <li><a href="# ">官方微信</a></li>
+                    <li><a href="# ">联系我们</a></li>
+                    <li><a href="# ">公益基金会</a></li>
+                </ul>
+                <ul>
+                    <span>特色服务</span>
+                    <li><a href="# ">F码通道</a></li>
+                    <li><a href="# ">礼物码</a></li>
+                    <li><a href="# ">防伪查询</a></li>
+                </ul>
+                <div class="telbox ">
+                    <p>400-100-5678</p>
+                    <p>8:00-18:00(仅收市话费)</p>
+                    <a href="# ">
+                        <em class="iconfont">&#xe647;</em> 人工客服
+                    </a>
+                    <div class="vx ">
+                        <span>关注小米：</span>
+                        <em class="iconfont">&#xe635;</em>
+                        <em class="iconfont vx-down">&#xe63e;</em>
+                        <img src="../img/download.png" alt="" class="hide vx-download">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-footer">
+            <div class="wrapper">
+                <div class="footer-bot">
+                    <div class="footer-logo">
+                        <img src="../img/mi-logo.png" alt="">
+                    </div>
+                    <div class="footer-text">
+                        <ul>
+                            <li><a href="#">小米商城</a></li>
+                            <li><a href="#">MIUI</a></li>
+                            <li><a href="#">米家</a></li>
+                            <li><a href="#">米聊</a></li>
+                            <li><a href="#">多看</a></li>
+                            <li><a href="#">游戏</a></li>
+                            <li><a href="#">政企服务</a></li>
+                            <li><a href="#">小米天猫店</a></li>
+                            <li><a href="#">小米集团隐私政策</a></li>
+                            <li><a href="#">小米公司儿童信息保护规则</a></li>
+                            <li><a href="#">小米商城隐私政策</a></li>
+                            <li><a href="#">小米商城用户协议</a></li>
+                            <li><a href="#">问题反馈</a></li>
+                            <li><a href="#" style="border-right: 0px;">Select Location</a></li>
+                        </ul>
+                        <p>
+                            <a href="#">&copy;mi.com</a> 京ICP证110507号
+                            <a href="#">京ICP备10046444号</a>
+                            <a href="#">京公网安备11010802020134号</a>
+                            <a href="#">京网文[2020]0276-042号</a>
+                        </p>
+                        <p>
+                            <a href="#">&copy;mi.com</a> 京ICP证110507号
+                            <a href="#">京ICP备10046444号</a>
+                            <a href="#">京公网安备11010802020134号</a>
+                            <a href="#">京网文[2020]0276-042号</a>
+                        </p>
+                        <p>
+                            <a href="#">&copy;mi.com</a> 京ICP证110507号
+                            <a href="#">京ICP备10046444号</a>
+                            <a href="#">京公网安备11010802020134号</a>
+                            <a href="#">京网文[2020]0276-042号</a>
+                        </p>
+                        <p>
+                            <a href="#">&copy;mi.com</a> 京ICP证110507号
+                            <a href="#">京ICP备10046444号</a>
+                            <a href="#">京公网安备11010802020134号</a>
+                            <a href="#">京网文[2020]0276-042号</a>
+                        </p>
+
+                        <ul class="logolist">
+                            <li>
+                                <a href="#">
+                                    <img src="../img/f1.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../img/f2.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../img/f3.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../img/f4.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <h3>让全球每个人都能享受科技带来的美好生活</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
