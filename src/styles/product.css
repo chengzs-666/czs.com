@@ -397,7 +397,7 @@ main .wrapper .shopbox form input {
   margin: 5px 0px 20px;
 }
 main .wrapper .shopbox form input[type="number"] {
-  text-indent: 23em;
+  text-align: center;
 }
 main .wrapper .shopbox > span {
   color: #888888;

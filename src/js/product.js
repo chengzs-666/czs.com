@@ -29,12 +29,18 @@ $.ajax({
             } else {
                 ev.returnValue = false;
             }
-            alert(1);
-
+            let num = $('input[type="number"]').val();
+            if (num < 1) {
+                alert('请输入正确的商品数量！');
+                return;
+            } else {
+                alert('商品加入购物车成功！')
+            }
             let shop = cookie.get('shop');
             let product = {
                 id: id,
-                price: newprice
+                price: newprice,
+                num: num
             };
 
             if (shop) {

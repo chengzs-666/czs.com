@@ -343,6 +343,8 @@ main .totalbox ul li .p-sum i {
   line-height: 38px;
   padding: 0px 11px;
   color: #888888;
+  user-select: none;
+  cursor: pointer;
 }
 main .totalbox ul li .p-sum input {
   width: 85px;
