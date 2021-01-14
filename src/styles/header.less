@@ -104,9 +104,9 @@ header{
                         width: 200px;
                         height: 80px;
                         right: 0px;
-                        line-height: 80px;
+                        line-height: 40px;
                         text-align: center;
-                        font-size: 20px;
+                        font-size: 16px;
                         z-index: 999;
                     }
                 }
@@ -192,9 +192,14 @@ header{
         z-index: 99;
         background: white;
         width: 100%;
-        border-top: 2px solid #cccccc;
-        border-bottom: 2px solid #cccccc;
+        border-top: 0px solid #cccccc;
+        border-bottom: 0px solid #cccccc;
+        &:hover{
+            border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+        }
         height: 0px;
+        box-sizing: border-box;
         ul{
             width: 1226px;
             margin: 0 auto;

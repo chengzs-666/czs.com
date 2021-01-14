@@ -4,18 +4,23 @@
     .swiper-container{
         width: 1226px;
         height: 460px;
+        .swiper-button-prev,.swiper-button-next{
+            
+            width: 40px;
+            height: 70px;
+        }
         .swiper-button-prev{
             left: 234px;
-            padding: 10px;
+            background: url(../img/icon-slides.png) no-repeat -84px 50%;
             &:hover{
-                background: #444444;
+                background-position: 0px 50%;
             }
         }
         .swiper-button-next{
             right: 0px;
-            padding: 10px;
+            background: url(../img/icon-slides.png) no-repeat -126px 50%;
             &:hover{
-                background: #444444;
+                background-position: -48px 50%;
             }
         }
         .swiper-pagination{
@@ -37,7 +42,7 @@
         z-index: 9;
         padding-top:20px;
         background: #a1a3a3;
-        
+        // opacity: 0.5 !important;  
         >li{
             float: none;
             &:hover{
@@ -55,6 +60,7 @@
                 box-shadow: 5px 5px 5px #cccccc;
                 border-top: 1px solid #cccccc;
                 display: none;
+                opacity: 1 !important;
                 >li{
                     width: 185px;
                     padding: 18px 20px;
