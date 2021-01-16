@@ -1,0 +1,204 @@
+@charset 'uft-8';
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 1226px;
+  margin: 0 auto;
+}
+ul::after {
+  content: '';
+  display: block;
+  height: 0px;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+ul li {
+  float: left;
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: #cccccc;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+}
+i,
+b,
+em {
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.videobtn {
+  border: 1px solid orangered;
+  background: orangered;
+}
+header .wrapper {
+  width: 1130px;
+}
+header .wrapper a {
+  display: block;
+  overflow: hidden;
+  padding: 26px 0px;
+}
+header .wrapper a img {
+  float: left;
+  width: 46px;
+  height: 46px;
+  background: orangered;
+}
+header .wrapper a .logotext {
+  float: left;
+  height: 46px;
+  margin-left: 16px;
+}
+header .wrapper a .logotext h1 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #222222;
+}
+header .wrapper a .logotext p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #555555;
+}
+main {
+  background: url(../img/login.jpg) no-repeat;
+  height: 588px;
+  background-size: auto 588px;
+  background-position: 50%;
+}
+main .wrapper {
+  width: 1130px;
+  position: relative;
+}
+main .wrapper .logo-logo {
+  position: absolute;
+  right: 0px;
+  top: 40px;
+  background: white;
+  width: 410px;
+  text-align: center;
+}
+main .wrapper .logo-logo > .login {
+  font-size: 25px;
+  line-height: 32px;
+  height: 32px;
+  padding: 25px 0px;
+}
+main .wrapper .logo-logo > .login a {
+  padding: 0px 25px;
+  color: #888888;
+}
+main .wrapper .logo-logo > .login a:hover {
+  color: orangered;
+}
+main .wrapper .logo-logo > .login a:nth-child(1) {
+  border-right: 3px solid #cccccc;
+}
+main .wrapper .logo-logo > .login .active {
+  color: orangered;
+}
+main .wrapper .logo-logo input {
+  display: block;
+  margin: 0 auto;
+  width: 345px;
+  height: 48px;
+  border: 1px solid #cccccc;
+  text-indent: 1em;
+  outline: 0px;
+  margin-bottom: 15px;
+}
+main .wrapper .logo-logo input[type="submit"] {
+  background: orangered;
+  color: white;
+  user-select: none;
+  cursor: pointer;
+}
+main .wrapper .logo-logo a:nth-child(5) {
+  display: block;
+  color: orangered;
+  font-size: 14px;
+  line-height: 20px;
+}
+main .wrapper .logo-logo a {
+  color: #888888;
+  font-size: 14px;
+  line-height: 60px;
+}
+main .wrapper .logo-logo a:hover {
+  color: orangered;
+}
+main .wrapper .logo-logo span {
+  color: #888888;
+}
+main .wrapper .logo-logo .items {
+  width: 65%;
+  display: flex;
+  justify-content: space-around;
+  margin: 135px auto 28px;
+}
+main .wrapper .logo-logo .items a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  background: url(../img/icons_type.png) no-repeat;
+  background-size: auto 25px;
+}
+main .wrapper .logo-logo .items a:nth-child(1) {
+  background-position: -24px 4px;
+  background-color: #0288d1;
+}
+main .wrapper .logo-logo .items a:nth-child(2) {
+  background-position: -50px 4px;
+  background-color: #d32f2f;
+}
+main .wrapper .logo-logo .items a:nth-child(3) {
+  background-position: -78px 4px;
+  background-color: #0ae;
+}
+main .wrapper .logo-logo .items a:nth-child(4) {
+  background-position: -116px 4px;
+  background-color: #00d20d;
+}
+footer {
+  height: 80;
+  padding-top: 100px;
+  text-align: center;
+}
+footer p:nth-child(1) a {
+  padding: 0px 7px;
+  line-height: 30px;
+  color: #888888;
+}
+footer p:nth-child(1) a:hover {
+  color: #444444;
+}
+footer p:nth-child(1) .active {
+  color: #444444;
+}
+footer p:nth-child(2) {
+  line-height: 30px;
+  color: #888888;
+}

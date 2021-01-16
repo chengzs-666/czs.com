@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mi.register</title>
+    <link rel="stylesheet" href="../styles/register.css">
+</head>
+
+<body>
+
+
+
+
+    <main>
+        <div class="wrapper">
+            <form action="../../interface/register.php" method="GET">
+                <a href="./index.html">
+                    <img src="../img/mi-logo.png" alt="">
+                </a>
+                <h1>注册小米账号</h1>
+                <h3>国家/地区</h3>
+                <select name="address" id="address">
+                    <option value="01">中国</option>
+                    <option value="02">美国</option>
+                    <option value="03">英国</option>
+                    <option value="04">法国</option>
+                    <option value="05">德国</option>
+                    <option value="06">日本</option>
+                    <option value="07">韩国</option>
+                </select>
+                <p>成功注册账号后，国家/地区将不能被修改</p>
+                <h3>手机号码</h3>
+                <div class="addressbox">
+                    <select name="phone" id="phone">
+                                <option value="01">+86</option>
+                                <option value="02">+76</option>
+                                <option value="03">+66</option>
+                                <option value="04">+56</option>
+                                <option value="05">+46</option>
+                                <option value="06">+36</option>
+                                <option value="07">+26</option>
+                            </select>
+                    <input type="tel" placeholder="请输入手机号码">
+                </div>
+                <h3>用户名</h3>
+                <input type="text" name="username" id="username" placeholder="请输入用户名">
+                <h3>密码</h3>
+                <input type="password" name="password" placeholder="请设置密码">
+                <h3>年龄</h3>
+                <input type="number" name="age" placeholder="请选择年龄">
+                <h3>性别</h3>
+                <div class="sexbox">
+                    <span>男</span><input type="radio" name="sex" value="1">
+                    <span>女</span><input type="radio" name="sex" value="0">
+                </div>
+                <h3>邮箱</h3>
+                <input type="email" name="email" placeholder="请输入邮箱">
+                <input type="submit" value="立即注册">
+                <p class="xy">已阅读并同意：小米 <a href="#">用户协议</a>和 <a href="#">隐私政策</a></p>
+
+            </form>
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <footer>
+        <div class="wrapper">
+            <p><a href="#" class="active">简体</a>| <a href="#">繁体</a>| <a href="#">English</a>| <a href="#">常见问题</a>| <a href="#">隐私政策</a></p>
+            <p>小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京ICP证110507号</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="../js/library/jquery.js"></script>
+<script src="../js/register.js"></script>

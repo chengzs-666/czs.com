@@ -1,0 +1,1050 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 1226px;
+  margin: 0 auto;
+}
+ul::after {
+  content: '';
+  display: block;
+  height: 0px;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+ul li {
+  float: left;
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: #cccccc;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+}
+i,
+b,
+em {
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.videobtn {
+  border: 1px solid orangered;
+  background: orangered;
+}
+.head-head {
+  height: 120px;
+  display: block;
+  background: url(../img/head-head.jpg) no-repeat;
+  background-size: auto 120px;
+  background-position: 50%;
+}
+header {
+  position: relative;
+}
+header .topbar {
+  background: #333333;
+}
+header .topbar::after {
+  content: '';
+  display: block;
+  height: 0px;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+header .topbar ul:nth-child(1) {
+  float: left;
+}
+header .topbar ul:nth-child(1) .downli {
+  position: relative;
+}
+header .topbar ul:nth-child(1) .downli:hover .downbox {
+  display: block;
+  height: 148px;
+}
+header .topbar ul:nth-child(1) .downli .downbox {
+  position: absolute;
+  z-index: 1001;
+  top: 40px;
+  left: -30px;
+  width: 124px;
+  height: 0px;
+  background: white;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+header .topbar ul:nth-child(1) .downli .downbox img {
+  width: 90px;
+  height: 90px;
+  padding: 18px 17px 0px;
+}
+header .topbar ul:nth-child(1) .downli .downbox p {
+  text-align: center;
+  color: #444444;
+  line-height: 12px;
+}
+header .topbar ul:nth-child(1) li a {
+  font-size: 13px;
+  height: 40px;
+  display: block;
+  padding: 0px 6px;
+  line-height: 40px;
+  color: #888888;
+}
+header .topbar ul:nth-child(1) li a:hover {
+  color: white;
+}
+header .topbar ul:nth-child(2) {
+  float: right;
+}
+header .topbar ul:nth-child(2) li a {
+  font-size: 14px;
+  height: 40px;
+  display: block;
+  padding: 0px 6px;
+  line-height: 40px;
+  color: #888888;
+}
+header .topbar ul:nth-child(2) li a:hover {
+  color: white;
+}
+header .topbar ul:nth-child(2) li .buylink {
+  display: block;
+  width: 120px;
+  text-align: center;
+  background: #424242;
+  color: #9f9f9f;
+  position: relative;
+}
+header .topbar ul:nth-child(2) li .buylink span {
+  font-size: 16px;
+}
+header .topbar ul:nth-child(2) li .buylink:hover {
+  background: white;
+  color: orangered;
+}
+header .topbar ul:nth-child(2) li .buylink:hover .buycar {
+  display: block;
+  box-shadow: 3px 3px 3px #cccccc;
+  box-shadow: 0px 3px 3px #cccccc;
+  background: white;
+}
+header .topbar ul:nth-child(2) li .buylink .buycar {
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  right: 0px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 16px;
+  z-index: 999;
+}
+header .midbar {
+  overflow: hidden;
+  padding: 20px 0px;
+}
+header .midbar .logo {
+  float: left;
+  width: 110px;
+  height: 55px;
+  background: orangered;
+  overflow: hidden;
+  position: relative;
+}
+header .midbar .logo .whitebox {
+  width: 55px;
+  height: 55px;
+  background: white;
+  position: absolute;
+  left: 55px;
+  z-index: 999;
+}
+header .midbar .logo img {
+  float: left;
+  width: 55px;
+  height: 55px;
+  transform: translate(-55px);
+  transition: all 0.2s;
+  user-select: none;
+  cursor: pointer;
+}
+header .midbar .logo:hover img {
+  transform: translate(0px);
+}
+header .midbar ul {
+  float: left;
+  margin-left: 120px;
+}
+header .midbar ul:hover .aaa {
+  height: 204px;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  box-shadow: 3px 3px 3px #cccccc;
+}
+header .midbar ul li a {
+  color: #222222;
+  line-height: 50px;
+  padding: 0px 7px;
+}
+header .midbar ul li a:hover {
+  color: orangered;
+}
+header .midbar ul li .aaa {
+  width: 100%;
+  height: 0px;
+  border-top: 0px solid #cccccc;
+  border-bottom: 0px solid #cccccc;
+  background: white;
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  top: 135px;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+header .midbar ul li .aaa ul {
+  width: 1226px;
+  margin-left: -moz-calc(50% - 613px);
+  margin-left: -webkit-calc(50% - 613px);
+  margin-left: calc(50% - 613px);
+  overflow: hidden;
+}
+header .midbar ul li .aaa ul li {
+  width: 204px;
+  height: 204px;
+  text-align: center;
+}
+header .midbar ul li .aaa ul li img {
+  width: 160px;
+  height: 110px;
+  padding: 10px 20px;
+}
+header .midbar ul li .aaa ul li span {
+  line-height: 25px;
+  color: orangered;
+}
+header .midbar .searchbox {
+  height: 48px;
+  float: right;
+  border: 1px solid #cccccc;
+  font-size: 0;
+}
+header .midbar .searchbox input[type="search"] {
+  outline: none;
+  border: 0px;
+  height: 48px;
+  width: 243px;
+  text-indent: 1.5em;
+  border-right: 1px solid #cccccc;
+  vertical-align: middle;
+}
+header .midbar .searchbox input[type="submit"] {
+  outline: none;
+  border: 0px;
+  height: 48px;
+  width: 48px;
+  background: white;
+  color: #616161;
+  vertical-align: middle;
+}
+header .midbar .searchbox input[type="submit"]:hover {
+  background: orangered;
+  color: white;
+}
+.banner-wrapper {
+  position: relative;
+  margin-bottom: 30px;
+}
+.banner-wrapper .swiper-container {
+  width: 1226px;
+  height: 460px;
+}
+.banner-wrapper .swiper-container .swiper-button-prev,
+.banner-wrapper .swiper-container .swiper-button-next {
+  width: 40px;
+  height: 70px;
+}
+.banner-wrapper .swiper-container .swiper-button-prev {
+  left: 234px;
+  background: url(../img/icon-slides.png) no-repeat -84px 50%;
+}
+.banner-wrapper .swiper-container .swiper-button-prev:hover {
+  background-position: 0px 50%;
+}
+.banner-wrapper .swiper-container .swiper-button-next {
+  right: 0px;
+  background: url(../img/icon-slides.png) no-repeat -126px 50%;
+}
+.banner-wrapper .swiper-container .swiper-button-next:hover {
+  background-position: -48px 50%;
+}
+.banner-wrapper .swiper-container .swiper-pagination {
+  text-align: right;
+  bottom: 30px;
+}
+.banner-wrapper .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #222222;
+}
+.banner-wrapper .swiper-container .swiper-pagination .swiper-pagination-bullet:nth-child(4) {
+  margin-right: 30px;
+}
+.banner-wrapper .banner-list {
+  width: 234px;
+  height: 440px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 9;
+  padding-top: 20px;
+  background: #a1a3a3;
+}
+.banner-wrapper .banner-list > li {
+  float: none;
+}
+.banner-wrapper .banner-list > li:hover .banner-nav {
+  display: block;
+}
+.banner-wrapper .banner-list > li .banner-nav {
+  position: absolute;
+  left: 234px;
+  top: 0px;
+  width: 992px;
+  height: 460px;
+  background: white;
+  box-shadow: 5px 5px 5px #cccccc;
+  border-top: 1px solid #cccccc;
+  display: none;
+  opacity: 1 !important;
+}
+.banner-wrapper .banner-list > li .banner-nav > li {
+  width: 185px;
+  padding: 18px 20px;
+  display: inline-block;
+}
+.banner-wrapper .banner-list > li .banner-nav > li a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+}
+.banner-wrapper .banner-list > li .banner-nav > li a span {
+  color: #444444;
+  line-height: 40px;
+  padding: 0px 20px;
+  vertical-align: middle;
+}
+.banner-wrapper .banner-list > li .banner-nav > li a span:hover {
+  color: orangered;
+}
+.banner-wrapper .banner-list > li .banner-nav > li a img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.banner-wrapper .banner-list > li > a {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  text-indent: 2em;
+  color: #ffffff;
+}
+.banner-wrapper .banner-list > li em {
+  color: #dddddd;
+}
+.banner-wrapper .banner-list > li:hover {
+  background: orangered;
+}
+.banner-wrapper .banner-bot {
+  overflow: hidden;
+  padding-top: 14px;
+}
+.banner-wrapper .banner-bot ul:nth-child(1) {
+  float: left;
+  width: 234px;
+  background: #444444;
+}
+.banner-wrapper .banner-bot ul:nth-child(1) li {
+  width: 70px;
+  height: 82px;
+  padding: 0px 3px;
+  margin-bottom: 3px;
+  text-align: center;
+  color: #cccccc;
+}
+.banner-wrapper .banner-bot ul:nth-child(1) li a {
+  opacity: 0.7;
+}
+.banner-wrapper .banner-bot ul:nth-child(1) li a:hover {
+  opacity: 1;
+  color: white;
+}
+.banner-wrapper .banner-bot ul:nth-child(1) li a em {
+  font-size: 20px;
+  display: block;
+  margin-top: 5px;
+  padding-top: 20px;
+  border-top: 1px solid #cccccc;
+}
+.banner-wrapper .banner-bot ul:nth-child(2) {
+  float: left;
+}
+.banner-wrapper .banner-bot ul:nth-child(2) li {
+  margin-left: 14px;
+}
+.banner-wrapper .banner-bot ul:nth-child(2) li img {
+  width: 316px;
+  height: 170px;
+}
+main {
+  background: #f5f5f5;
+  padding-bottom: 30px;
+}
+main .secsall {
+  overflow: hidden;
+}
+main .secsall .titlebox {
+  height: 58px;
+  position: relative;
+}
+main .secsall .titlebox h2 {
+  font-size: 25px;
+  line-height: 58px;
+}
+main .secsall .titlebox span {
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+  user-select: none;
+  cursor: pointer;
+}
+main .secsall .titlebox span i {
+  border: 1px solid #cccccc;
+  color: #aaaaaa;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+main .secsall .titlebox span i:nth-child(1) {
+  border-right: 0px;
+}
+main .secsall .timer {
+  width: 234px;
+  height: 300px;
+  border-top: 1px solid red;
+  background: #f1eded;
+  text-align: center;
+  float: left;
+}
+main .secsall .timer p:nth-child(1) {
+  color: red;
+  font-size: 20px;
+  line-height: 70px;
+  padding-top: 30px;
+}
+main .secsall .timer p:nth-child(3) {
+  color: #666666;
+  line-height: 70px;
+}
+main .secsall .timer span {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  background: #444444;
+  color: #ffffff;
+  text-align: center;
+  line-height: 46px;
+  font-size: 25px;
+}
+main .secsall .sallboxs {
+  float: left;
+  overflow: hidden;
+  width: 992px;
+  height: 300px;
+  position: relative;
+}
+main .secsall .sallboxs ul {
+  overflow: hidden;
+  width: 3000px;
+  position: absolute;
+}
+main .secsall .sallboxs ul li {
+  float: left;
+  width: 234px;
+  height: 300px;
+  margin-left: 14px;
+  text-align: center;
+  box-shadow: 3px 3px 3px #cccccc;
+  background: #ffffff;
+}
+main .secsall .sallboxs ul li .sallbox {
+  width: 160px;
+  height: 165px;
+  margin: 10px auto;
+}
+main .secsall .sallboxs ul li .sallbox img {
+  width: 100%;
+  height: 100%;
+}
+main .secsall .sallboxs ul li p:nth-child(2) {
+  color: #111111;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+}
+main .secsall .sallboxs ul li p:nth-child(3) {
+  color: #888888;
+  font-size: 13px;
+  text-align: center;
+  line-height: 22px;
+}
+main .secsall .sallboxs ul li span {
+  font-size: 16px;
+  color: #ff6700;
+  line-height: 50px;
+}
+main .secsall .sallboxs ul li del {
+  color: #aaaaaa;
+}
+main .secsall .sallboxs ul li:nth-child(1) {
+  border-top: 1px solid yellow;
+}
+main .secsall .sallboxs ul li:nth-child(2) {
+  border-top: 1px solid green;
+}
+main .secsall .sallboxs ul li:nth-child(3) {
+  border-top: 1px solid blue;
+}
+main .secsall .sallboxs ul li:nth-child(4) {
+  border-top: 1px solid orangered;
+}
+main .secsall .sallboxs ul li:nth-child(5) {
+  border-top: 1px solid pink;
+}
+main .phone .titlebox {
+  position: relative;
+  padding-bottom: 20px;
+}
+main .phone .titlebox h2 {
+  font-size: 25px;
+}
+main .phone .titlebox .more {
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+}
+main .phone .titlebox .more:hover span {
+  color: orangered;
+}
+main .phone .titlebox .more:hover em {
+  color: white;
+  background: orangered;
+}
+main .phone .titlebox .more span {
+  color: #444444;
+}
+main .phone .titlebox .more em {
+  background: #888888;
+  font-size: 12px;
+  color: #cccccc;
+  border-radius: 50%;
+  padding: 5px 5px 7px 6px;
+}
+main .phone .sellbox {
+  overflow: hidden;
+  padding-top: 5px;
+}
+main .phone .sellbox .mainsell {
+  float: left;
+  width: 234px;
+  height: 614px;
+  position: relative;
+  overflow: visible;
+}
+main .phone .sellbox .mainsell img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  transition: all 0.5s;
+}
+main .phone .sellbox .mainsell img:hover {
+  top: -5px;
+  box-shadow: 10px 10px 10px #cccccc;
+}
+main .phone .sellbox ul {
+  float: left;
+  width: 992px;
+}
+main .phone .sellbox ul li {
+  width: 234px;
+  height: 300px;
+  margin: 0px 0px 14px 14px;
+  background: white;
+  transition: all 0.5s;
+  position: relative;
+  top: 0px;
+}
+main .phone .sellbox ul li:hover {
+  top: -5px;
+  box-shadow: 10px 10px 10px #cccccc;
+}
+main .phone .sellbox ul li a {
+  text-align: center;
+}
+main .phone .sellbox ul li a p:nth-child(2) {
+  color: #222222;
+}
+main .phone .sellbox ul li a p:nth-child(3) {
+  color: #aaaaaa;
+  font-size: 14px;
+  line-height: 35px;
+}
+main .phone .sellbox ul li a span {
+  color: #ff6700;
+  line-height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+main .phone .sellbox ul li img {
+  display: block;
+  margin: 10px auto;
+}
+main .smart .titlebox {
+  position: relative;
+  padding-bottom: 20px;
+}
+main .smart .titlebox h2 {
+  font-size: 25px;
+}
+main .smart .titlebox ul {
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+}
+main .smart .titlebox ul li {
+  margin: 0px 10px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  color: #444444;
+  user-select: none;
+  cursor: pointer;
+}
+main .smart .titlebox ul li.active {
+  border-bottom: 1px solid orangered;
+  color: orangered;
+}
+main .smart .sellbox {
+  overflow: hidden;
+}
+main .smart .sellbox .mainsell {
+  float: left;
+  width: 234px;
+}
+main .smart .sellbox .mainsell img {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  top: 5px;
+  transition: all 0.5s;
+}
+main .smart .sellbox .mainsell img:hover {
+  top: 0px;
+  box-shadow: 5px 5px 5px #cccccc;
+}
+main .smart .sellbox .mainsell img:nth-child(1) {
+  margin-bottom: 14px;
+}
+main .smart .sellbox .sellbox {
+  float: left;
+  width: 992px;
+}
+main .smart .sellbox .sellbox ul li {
+  height: 300px;
+  width: 234px;
+  text-align: center;
+  background: #ffffff;
+  margin: 0px 0px 14px 14px;
+  position: relative;
+  top: 5px;
+  transition: all 0.5s;
+}
+main .smart .sellbox .sellbox ul li:hover {
+  top: 0px;
+  box-shadow: 5px 5px 5px #cccccc;
+}
+main .smart .sellbox .sellbox ul li img {
+  padding-top: 10px;
+}
+main .smart .sellbox .sellbox ul li p:nth-child(2) {
+  color: #222222;
+  font-size: 14px;
+  line-height: 20px;
+}
+main .smart .sellbox .sellbox ul li p:nth-child(3) {
+  color: #aaaaaa;
+  font-size: 13px;
+}
+main .smart .sellbox .sellbox ul li span {
+  line-height: 55px;
+  color: #ff6700;
+}
+main .smart .sellbox .sellbox ul li del {
+  padding-left: 10px;
+  color: #aaaaaa;
+}
+main .smart .sellbox .sellbox ul li:nth-child(8) {
+  user-select: none;
+  cursor: pointer;
+  background: #f1f1f1;
+}
+main .smart .sellbox .sellbox ul li:nth-child(8):hover {
+  top: 5px;
+  box-shadow: 0px 0px;
+}
+main .smart .sellbox .sellbox ul li:nth-child(8) .litop {
+  width: 100%;
+  height: 143px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  background: #ffffff;
+  position: relative;
+  top: 0px;
+  transition: all 0.5s;
+}
+main .smart .sellbox .sellbox ul li:nth-child(8) .litop:hover {
+  top: -5px;
+  box-shadow: 5px 5px 5px #cccccc;
+}
+main .smart .sellbox .sellbox ul li:nth-child(8) .litop .litopleft {
+  float: left;
+  width: 94px;
+  height: 60px;
+  font-size: 14px;
+  text-align: left;
+  color: #222222;
+  margin-top: 35px;
+  margin-left: 30px;
+}
+main .smart .sellbox .sellbox ul li:nth-child(8) .litop .litopleft span {
+  line-height: 35px;
+}
+main .smart .sellbox .sellbox ul li:nth-child(8) .litop .litopright {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-top: 22px;
+  margin-left: 10px;
+}
+main .smart .sellbox .sellbox ul li:nth-child(8) .libot {
+  width: 100%;
+  height: 143px;
+  overflow: hidden;
+  background: #ffffff;
+  position: relative;
+  top: 0px;
+  transition: all 0.5s;
+}
+main .smart .sellbox .sellbox ul li:nth-child(8) .libot:hover {
+  top: -5px;
+  box-shadow: 5px 5px 5px #cccccc;
+}
+main .smart .sellbox .sellbox ul li:nth-child(8) .libot .libotleft {
+  float: left;
+  margin-top: 40px;
+  margin-left: 30px;
+  font-size: 20px;
+  color: #222222;
+  text-align: left;
+}
+main .smart .sellbox .sellbox ul li:nth-child(8) .libot .libotleft b {
+  font-weight: normal;
+  font-size: 14px;
+  color: #888888;
+  text-align: left;
+}
+main .smart .sellbox .sellbox ul li:nth-child(8) .libot .libotright {
+  float: left;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+main .smart .sellbox .sellbox ul li:nth-child(8) .libot .libotright i {
+  display: block;
+  width: 46px;
+  height: 46px;
+  border: 3px solid #ff6700;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 46px;
+  font-size: 30px;
+  color: #ff6700;
+}
+main .video .titlebox {
+  position: relative;
+  padding-bottom: 20px;
+}
+main .video .titlebox h2 {
+  font-size: 25px;
+}
+main .video .titlebox .more {
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+  font-size: 20px;
+  transition: all 0.8s;
+}
+main .video .titlebox .more:hover span {
+  color: orangered;
+}
+main .video .titlebox .more:hover em {
+  color: white;
+  background: orangered;
+}
+main .video .titlebox .more span {
+  color: #444444;
+}
+main .video .titlebox .more em {
+  background: #888888;
+  font-size: 12px;
+  color: #cccccc;
+  border-radius: 50%;
+  padding: 5px 5px 7px 6px;
+}
+main .video .videobox {
+  display: flex;
+  justify-content: space-between;
+}
+main .video .videobox div {
+  width: 296px;
+  height: 285px;
+  background: white;
+  position: relative;
+  top: 5px;
+  transition: all 0.5s;
+  user-select: none;
+  cursor: pointer;
+}
+main .video .videobox div:hover {
+  top: 0px;
+  box-shadow: 5px 5px 5px #cccccc;
+}
+main .video .videobox div img {
+  width: 296px;
+  height: 180px;
+}
+main .video .videobox div .videobtn {
+  background: orangered;
+  border: 1px solid orangered;
+}
+main .video .videobox div i:nth-child(2) {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  display: block;
+  width: 35px;
+  height: 20px;
+  line-height: 20px;
+  background: black;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+}
+main .video .videobox div p:nth-child(3) {
+  text-align: center;
+  font-size: 15px;
+  color: #222222;
+  padding-top: 25px;
+}
+main .video .videobox div p:nth-child(4) {
+  text-align: center;
+  font-size: 13px;
+  color: #aaaaaa;
+  line-height: 40px;
+}
+footer .footer-top {
+  border-bottom: 1px solid #cccccc;
+}
+footer .footer-top ul {
+  padding: 20px 0px;
+}
+footer .footer-top ul li {
+  width: 245.2px;
+  box-sizing: border-box;
+  border-right: 1px solid #cccccc;
+  text-align: center;
+}
+footer .footer-top ul li a {
+  font-size: 20px;
+  color: #444444;
+  line-height: 40px;
+}
+footer .footer-top ul li a:hover {
+  color: orangered;
+}
+footer .footer-top ul li a i {
+  font-size: 30px;
+}
+footer .footer-mid {
+  padding: 40px 0px;
+}
+footer .footer-mid::after {
+  content: '';
+  display: block;
+  height: 0px;
+  overflow: hidden;
+  clear: both;
+  visibility: hidden;
+}
+footer .footer-mid ul {
+  float: left;
+  width: 160px;
+}
+footer .footer-mid ul span {
+  display: block;
+  margin-bottom: 20px;
+}
+footer .footer-mid ul li {
+  clear: both;
+}
+footer .footer-mid ul li a {
+  line-height: 28px;
+  font-size: 15px;
+  color: #888888;
+}
+footer .footer-mid ul li a:hover {
+  color: orangered;
+}
+footer .footer-mid .telbox {
+  margin-left: 979px;
+  height: 110px;
+  border-left: 1px solid #cccccc;
+  text-align: center;
+}
+footer .footer-mid .telbox p:nth-child(1) {
+  color: orangered;
+  font-size: 20px;
+}
+footer .footer-mid .telbox p:nth-child(2) {
+  color: #444444;
+  line-height: 25px;
+  font-size: 14px;
+}
+footer .footer-mid .telbox a:nth-child(3) {
+  display: block;
+  width: 118px;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid orangered;
+  margin: 0 auto;
+  color: orangered;
+  text-decoration: none;
+}
+footer .footer-mid .telbox a:nth-child(3):hover {
+  color: #ffffff;
+  background: orangered;
+}
+footer .footer-mid .telbox .vx {
+  padding-top: 10px;
+  font-size: 15px;
+  position: relative;
+}
+footer .footer-mid .telbox .vx span {
+  color: #444444;
+}
+footer .footer-mid .telbox .vx > em {
+  font-size: 20px;
+}
+footer .footer-mid .telbox .vx > em:hover {
+  color: orangered;
+}
+footer .footer-mid .telbox .vx img {
+  width: 126px;
+  height: 126px;
+  position: absolute;
+  top: 32px ;
+  right: 10px;
+}
+footer .footer-footer {
+  background: #fafafa;
+  padding: 20px 0px;
+}
+footer .footer-footer .footer-bot {
+  overflow: hidden;
+}
+footer .footer-footer .footer-bot .footer-logo {
+  float: left;
+  width: 46px;
+  height: 46px;
+  background: orangered;
+}
+footer .footer-footer .footer-bot .footer-logo img {
+  width: 100%;
+  height: 100%;
+}
+footer .footer-footer .footer-bot .footer-text {
+  float: left;
+  width: 1100px;
+  padding-left: 15px;
+}
+footer .footer-footer .footer-bot .footer-text > ul li a {
+  color: #444444;
+  font-size: 12px;
+  padding: 0px 5px;
+  border-right: 1px solid #444444;
+}
+footer .footer-footer .footer-bot .footer-text > ul li a:hover {
+  color: orangered;
+}
+footer .footer-footer .footer-bot .footer-text p {
+  color: #888888;
+  font-size: 14px;
+}
+footer .footer-footer .footer-bot .footer-text p a {
+  color: #888888;
+}
+footer .footer-footer .footer-bot .footer-text p a:hover {
+  color: orangered;
+}
+footer .footer-footer .footer-bot .footer-text .logolist {
+  padding-top: 15px;
+}
+footer .footer-footer .footer-bot .footer-text .logolist li {
+  width: 100px;
+  height: 40px;
+}
+footer .footer-footer .footer-bot .footer-text .logolist li a {
+  border-right: 0px;
+}
+footer .footer-footer .footer-bot .footer-text .logolist li a img {
+  width: 100px;
+  height: 40px;
+}
+footer .footer-footer .footer-bot .footer-text h3 {
+  font-size: 20px;
+  line-height: 60px;
+  color: #888888;
+  text-align: center;
+  font-family: '华文行楷';
+}

@@ -1,0 +1,185 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 1226px;
+  margin: 0 auto;
+}
+ul::after {
+  content: '';
+  display: block;
+  height: 0px;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+ul li {
+  float: left;
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: #cccccc;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+}
+i,
+b,
+em {
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.videobtn {
+  border: 1px solid orangered;
+  background: orangered;
+}
+main {
+  background: #f1f1f1;
+  padding-top: 5%;
+}
+main .wrapper {
+  width: 786px;
+  background: white;
+  text-align: center;
+}
+main .wrapper form {
+  width: 332px;
+  margin: 0 auto;
+}
+main .wrapper form input {
+  border: 1px solid #cccccc;
+  outline: 0px;
+  width: 332px;
+  height: 32px;
+  margin: 5px 0px 10px;
+  text-indent: 1em;
+}
+main .wrapper form img {
+  width: 46px;
+  height: 46px;
+  background: orangered;
+}
+main .wrapper form h1 {
+  font-size: 30px;
+  line-height: 95px;
+}
+main .wrapper form h3 {
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  color: #222222;
+}
+main .wrapper form select[name="address"] {
+  width: 330px;
+  height: 32px;
+  outline: 0px;
+  border: 1px solid #cccccc;
+  margin: 5px 0px;
+  text-indent: 1em;
+  color: #888888;
+}
+main .wrapper form p {
+  text-align: left;
+  font-size: 14px;
+  color: #888888;
+  padding-bottom: 16px;
+}
+main .wrapper form .addressbox {
+  width: 330px;
+  border: 1px solid #cccccc;
+  height: 32px;
+  line-height: 32px;
+  font-size: 0;
+  margin: 5px 0px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+main .wrapper form .addressbox > select {
+  border: 0px;
+  outline: 0px;
+  height: 32px;
+  width: 68px;
+  float: left;
+}
+main .wrapper form .addressbox > input {
+  border: 0px;
+  width: 254px;
+  outline: 0px;
+  height: 32px;
+  float: left;
+  text-indent: 1em;
+  margin: 0px;
+}
+main .wrapper form .sexbox {
+  overflow: hidden;
+}
+main .wrapper form .sexbox > span {
+  float: left;
+  line-height: 26px;
+}
+main .wrapper form .sexbox > input {
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+main .wrapper form input[type="submit"] {
+  border: 0px;
+  background: orangered;
+  width: 332px;
+  height: 32px;
+  color: white;
+  user-select: none;
+  cursor: pointer;
+}
+main .wrapper form input[type="submit"]:hover {
+  opacity: 0.6;
+}
+main .wrapper form .xy {
+  padding: 40px 0px;
+  line-height: 32px;
+  text-align: center;
+}
+main .wrapper form .xy a {
+  color: #222222;
+}
+footer {
+  height: 80;
+  padding-top: 100px;
+  text-align: center;
+}
+footer p:nth-child(1) a {
+  padding: 0px 7px;
+  line-height: 30px;
+  color: #888888;
+}
+footer p:nth-child(1) a:hover {
+  color: #444444;
+}
+footer p:nth-child(1) .active {
+  color: #444444;
+}
+footer p:nth-child(2) {
+  line-height: 30px;
+  color: #888888;
+}

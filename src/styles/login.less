@@ -1,0 +1,159 @@
+@charset 'uft-8';
+
+@import './reset.less';
+
+header{
+    .wrapper{
+        width: 1130px;
+        a{
+            display: block;
+            overflow: hidden;
+            padding: 26px 0px;
+            img{
+                float: left;
+                width: 46px;
+                height: 46px;
+                background: orangered;
+            }
+            .logotext{
+                float: left;
+                height: 46px;
+                margin-left: 16px;
+                h1{
+                    font-size: 30px;
+                    line-height: 30px;
+                    color: #222222;
+                }
+                p{
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #555555;
+                }
+            }
+        }
+    }
+}
+main{
+    background: url(../img/login.jpg) no-repeat;
+    height: 588px;
+    background-size: auto 588px;
+    background-position: 50%;
+    .wrapper{
+        width: 1130px;
+        position: relative;
+        .logo-logo{
+            position: absolute;
+            right: 0px;
+            top: 40px;
+            background: white;
+            width: 410px;
+            text-align: center;
+            >.login{
+                font-size: 25px;
+                line-height: 32px;
+                height: 32px;
+                padding: 25px 0px;
+                a{
+                    padding: 0px 25px;
+                    color: #888888;
+                    &:hover{
+                        color: orangered;
+                    }
+                    &:nth-child(1){
+                        border-right: 3px solid #cccccc;
+                    }
+                }
+                .active{
+                    color: orangered;
+                }
+            }
+            input{
+                display: block;
+                margin: 0 auto;
+                width: 345px;
+                height: 48px;
+                border: 1px solid #cccccc;
+                text-indent: 1em;
+                outline: 0px;
+                margin-bottom: 15px;
+                &[type="submit"]{
+                    background: orangered;
+                    color: white;
+                    user-select: none;
+                    cursor: pointer;
+                }
+            }
+            a:nth-child(5){
+                display: block;
+                color: orangered;
+                font-size: 14px;
+                line-height: 20px;
+            }
+            a{
+                color: #888888;
+                font-size: 14px;
+                line-height: 60px;
+                &:hover{
+                    color: orangered;
+                }
+            }
+            span{
+                color: #888888;
+            }
+            .items{
+                width: 65%;
+                display: flex;
+                justify-content: space-around;
+                margin: 135px auto 28px;
+                a{
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    line-height: 30px;
+                    background: url(../img/icons_type.png) no-repeat;
+                    background-size: auto 25px;
+                    &:nth-child(1){
+                        background-position: -24px 4px;
+                        background-color: #0288d1;
+                    }
+                    &:nth-child(2){
+                        background-position: -50px 4px;
+                        background-color: #d32f2f;
+                    }
+                    &:nth-child(3){
+                        background-position: -78px 4px;
+                        background-color: #0ae;
+                    }
+                    &:nth-child(4){
+                        background-position: -116px 4px;
+                        background-color: #00d20d;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    height: 80;
+    padding-top: 100px;
+    text-align: center;
+    p:nth-child(1){
+        a{
+            padding: 0px 7px;
+            line-height: 30px;
+            color: #888888;
+            &:hover{
+                color: #444444;
+            }
+        }
+        .active{
+            color: #444444;
+        }
+    }
+    p:nth-child(2){
+        line-height: 30px;
+        color: #888888;
+    }
+}
